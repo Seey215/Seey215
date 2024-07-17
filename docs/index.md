@@ -1,9 +1,9 @@
 ---
 template: home.html
-title: Material for MkDocs
+title: Seey
 social:
   cards_layout_options:
     title: Documentation that simply works
 ---
 
-Welcome to Material for MkDocs.
+欢迎来到 Seey 的文档中心！
