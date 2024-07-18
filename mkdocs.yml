@@ -1,6 +1,7 @@
 # Project information
-site_name: Seey's Learning Log
-site_url: https://squidfunk.github.io/mkdocs-material/
+site_name: Seey
+# site_url: https://squidfunk.github.io/mkdocs-material/
+site_url: https://seey215.github.io/Seey215/
 site_author: Seey
 site_description: >-
   你好，欢迎访问我的学习笔记
@@ -15,6 +16,7 @@ repo_url: https://github.com/Seey215/Seey215
 # Configuration
 theme:
   name: material
+  language: zh
   custom_dir: material/overrides
   features:
     - announce.dismiss
@@ -36,6 +38,7 @@ theme:
     # - navigation.prune
     - navigation.sections
     - navigation.tabs
+    - navigation.path
     # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
@@ -43,16 +46,11 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-    # - toc.integrate
   palette:
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/link
-        name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: indigo
+      primary: teal
+      accent: teal
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
@@ -93,11 +91,18 @@ extra:
     property: !ENV GOOGLE_ANALYTICS_KEY
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/squidfunk
+      link: https://github.com/Seey215
     - icon: fontawesome/brands/x-twitter
     #  link: https://x.com/squidfunk
     - icon: fontawesome/brands/docker
     #  link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+  alternate:
+    - name: 中文
+      link: /
+      lang: zh
+    - name: English
+      link: /en/ 
+      lang: en
 
 # Extensions
 markdown_extensions:
@@ -154,18 +159,10 @@ not_in_nav: |
 
 # Page tree
 nav:
-  - Home: index.md
+  - 首页: index.md
   - Getting started:
     - Installation: getting-started.md
     - Creating your site: creating-your-site.md
-    # - Publishing your site: publishing-your-site.md
-    # - Customization: customization.md
-    # - Conventions: conventions.md
-    # - Browser support: browser-support.md
-    # - Enterprise feedback: enterprise-support.md
-    # - Philosophy: philosophy.md
-    # - Alternatives: alternatives.md
-    # - License: license.md
     - Tutorials:
       - tutorials/index.md
       - "Blogs":
@@ -178,98 +175,10 @@ nav:
     - Changelog:
       - changelog/index.md
       - How to upgrade: upgrade.md
-  - Setup:
-    - setup/index.md
-    - Changing the colors: setup/changing-the-colors.md
-    # - Changing the fonts: setup/changing-the-fonts.md
-    # - Changing the language: setup/changing-the-language.md
-    # - Changing the logo and icons: setup/changing-the-logo-and-icons.md
-    # - Ensuring data privacy: setup/ensuring-data-privacy.md
-    # - Setting up navigation: setup/setting-up-navigation.md
-    # - Setting up site search: setup/setting-up-site-search.md
-    # - Setting up site analytics: setup/setting-up-site-analytics.md
-    # - Setting up social cards: setup/setting-up-social-cards.md
-    # - Setting up a blog: setup/setting-up-a-blog.md
-    # - Setting up tags: setup/setting-up-tags.md
-    # - Setting up versioning: setup/setting-up-versioning.md
-    # - Setting up the header: setup/setting-up-the-header.md
-    # - Setting up the footer: setup/setting-up-the-footer.md
-    # - Adding a git repository: setup/adding-a-git-repository.md
-    # - Adding a comment system: setup/adding-a-comment-system.md
-    # - Building an optimized site: setup/building-an-optimized-site.md
-    - Building for offline usage: setup/building-for-offline-usage.md
-    - Extensions:
-      - setup/extensions/index.md
-      - Python Markdown: setup/extensions/python-markdown.md
-      - Python Markdown Extensions: setup/extensions/python-markdown-extensions.md
-  - Blog:
-    - blog/index.md
-  - 英语学习:
+  - 英语:
     - english/index.md
-  # - Reference:
-  #   - reference/index.md
-  #   - Admonitions: reference/admonitions.md
-  #   - Annotations: reference/annotations.md
-  #   - Buttons: reference/buttons.md
-  #   - Code blocks: reference/code-blocks.md
-  #   - Content tabs: reference/content-tabs.md
-  #   - Data tables: reference/data-tables.md
-  #   - Diagrams: reference/diagrams.md
-  #   - Footnotes: reference/footnotes.md
-  #   - Formatting: reference/formatting.md
-  #   - Grids: reference/grids.md
-  #   - Icons, Emojis: reference/icons-emojis.md
-  #   - Images: reference/images.md
-  #   - Lists: reference/lists.md
-  #   - Math: reference/math.md
-  #   - Tooltips: reference/tooltips.md
-  # - Plugins:
-  #   - plugins/index.md
-  #   - Blog: plugins/blog.md
-  #   - Group: plugins/group.md
-  #   - Info: plugins/info.md
-  #   - Meta: plugins/meta.md
-  #   - Offline: plugins/offline.md
-  #   - Optimize: plugins/optimize.md
-  #   - Privacy: plugins/privacy.md
-  #   - Projects: plugins/projects.md
-  #   - Search: plugins/search.md
-  #   - Social: plugins/social.md
-  #   - Tags: plugins/tags.md
-  #   - Typeset: plugins/typeset.md
-  #   - Requirements:
-  #     - Image processing: plugins/requirements/image-processing.md
-  #     - Caching: plugins/requirements/caching.md
-  # - Insiders:
-  #   - insiders/index.md
-  #   - Why sponsor us: insiders/why-sponsor-us.md
-  #   - What's in it for you: insiders/benefits.md
-  #   - Who is sponsoring: insiders/our-sponsors.md
-  #   - Sponsoring tiers: insiders/sponsoring-tiers.md
-  #   - How to sponsor: insiders/how-to-sponsor.md
-  #   - Additional information:
-  #     - Payment and billing: insiders/payment-and-billing.md
-  #     - Access management: insiders/access-management.md
-  #     - Runtime and cancellation: insiders/runtime-and-cancellation.md
-  #     - Privacy: insiders/privacy.md
-  #     - License: insiders/license.md
-  #     - Support: support.md
-  #   - Using Insiders:
-  #     - Getting started: insiders/getting-started.md
-  #   - Changelog:
-  #     - insiders/changelog/index.md
-  #     - How to upgrade: insiders/upgrade.md
-  # - Community:
-  #   - Contributing:
-  #     - contributing/index.md
-  #     - Reporting a bug: contributing/reporting-a-bug.md
-  #     - Reporting a docs issue: contributing/reporting-a-docs-issue.md
-  #     - Requesting a change: contributing/requesting-a-change.md
-  #     - Adding translations: contributing/adding-translations.md
-  #     - Making a pull request: contributing/making-a-pull-request.md
-  #     - Asking a question: https://github.com/squidfunk/mkdocs-material/discussions
-  #   - Guides:
-  #     - Creating a reproduction: guides/creating-a-reproduction.md
-  #   - Community experts program:
-  #     - insiders/community-experts-program/index.md
+  - 算法:
+    - algorithm/index.md
+  # - Blog:
+  #   - blog/index.md
 

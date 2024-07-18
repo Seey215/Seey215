@@ -4,13 +4,14 @@
 
 <p align="center">
   <strong>
-    You can find me on this
-    <a href="https://seey215.cn/">Seey215</a>
+    My blog site is hosted on Github Pages, and the site address is
+    <a href="https://seey215.github.io/Seey215/">seey215.github.io</a>
   </strong>
 </p>
 
 <p align="center">
   <a href="https://seey215.cn/">
+    <!-- TODO 图片压缩 -->
     <img src="./docs/assets/screenshots/home-seey215.png/" width="700" />
   </a>
   
