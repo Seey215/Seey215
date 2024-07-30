@@ -24,26 +24,6 @@
   </em>
 </p>
 
-<h2></h2>
-<p id="premium-sponsors">&nbsp;</p>
-<p align="center"><strong>Silver sponsors</strong></p>
-<p align="center">
-  <a href="https://fastapi.tiangolo.com/" target=_blank><img
-    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-fastapi.png" height="120"
-  /></a>
-</p>
-<p>&nbsp;</p>
-<p align="center"><strong>Bronze sponsors</strong></p>
-<p align="center">
-  <a href="https://cirrus-ci.org/" target=_blank><img
-    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-cirrus-ci.png" height="58"
-  /></a>
-  <a href="https://invers.com/" target=_blank><img
-    src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/sponsors/sponsor-invers.png" height="58"
-  /></a>
-</p>
-<p>&nbsp;</p>
-
 ## Everything you would expect
 
 ### It's just Markdown

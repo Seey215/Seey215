@@ -1,6 +1,5 @@
 # Project information
 site_name: Seey
-# site_url: https://squidfunk.github.io/mkdocs-material/
 site_url: https://seey215.github.io/Seey215/
 site_author: Seey
 site_description: >-
@@ -10,9 +9,6 @@ site_description: >-
 repo_name: Seey215/Seey215
 repo_url: https://github.com/Seey215/Seey215
 
-# Copyright
-# copyright: Copyright &copy; 2016 - 2024 Martin Donath
-
 # Configuration
 theme:
   name: material
@@ -20,32 +16,20 @@ theme:
   custom_dir: material/overrides
   features:
     - announce.dismiss
-    - content.action.edit
     - content.action.view
     - content.code.annotate
     - content.code.copy
-    # - content.code.select
-    # - content.footnote.tooltips
-    # - content.tabs.link
     - content.tooltips
-    # - header.autohide
-    # - navigation.expand
     - navigation.footer
     - navigation.indexes
-    # - navigation.instant
-    # - navigation.instant.prefetch
-    # - navigation.instant.progress
-    # - navigation.prune
     - navigation.sections
     - navigation.tabs
     - navigation.path
-    # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
-    - toc.follow
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -92,17 +76,13 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Seey215
-    - icon: fontawesome/brands/x-twitter
-    #  link: https://x.com/squidfunk
-    - icon: fontawesome/brands/docker
-    #  link: https://hub.docker.com/r/squidfunk/mkdocs-material/
-  alternate:
-    - name: 中文
-      link: /
-      lang: zh
-    - name: English
-      link: /en/ 
-      lang: en
+  # alternate:
+  #   - name: 中文
+  #     link: /
+  #     lang: zh
+  #   - name: English
+  #     link: /en/ 
+  #     lang: en
 
 # Extensions
 markdown_extensions:
@@ -113,7 +93,7 @@ markdown_extensions:
   - footnotes
   - md_in_html
   - toc:
-      permalink: true
+      permalink: false
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
@@ -132,8 +112,8 @@ markdown_extensions:
   - pymdownx.magiclink:
       normalize_issue_symbols: true
       repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
+      user: seey
+      repo: seey215
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets:
@@ -179,6 +159,12 @@ nav:
     - english/index.md
   - 算法:
     - algorithm/index.md
+  - 数据库:
+    - database/connect.md
+    - database/architect.md
+    - database/sql-analyze.md
+    - database/engine-table.md
+    - database/service.md
   # - Blog:
   #   - blog/index.md
 
