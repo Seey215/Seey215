@@ -3,7 +3,7 @@ site_name: Seey
 site_url: https://seey215.github.io/Seey215/
 site_author: Seey
 site_description: >-
-  你好，欢迎访问我的学习笔记
+  这里记录了我的一些学习笔记。
 
 # Repository
 repo_name: Seey215/Seey215
@@ -94,5 +94,7 @@ nav:
       - database/engine-table.md
       - database/service.md
       - database/temp.md
-  - Blog:
+  - 博客:
     - blog/index.md
+  - 关于:
+    - about.md

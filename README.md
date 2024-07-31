@@ -1,18 +1,18 @@
-# Made with MkDocs
+<p align="center">
+  <a href="https://seey215.cn/">
+    <img src="./docs/assets/images/illustration.png/" width="700" />
+  </a>
+</p>
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+<p align="center">
+  <strong>
+    My blog site is hosted on Github Pages, and the site address is
+    <a href="https://seey215.github.io/Seey215/">seey215.github.io</a>
+  </strong>
+</p>
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project. eg: `mkdocs new .`
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-* `mkdocs gh-deploy` - Deploy to GitHub Pages.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+<p align="center">
+  <em>
+    你好！我是一名 web后端开发工程师(NodeJS) – <a href="https://seey215.cn/">seey215.cn</a>
+  </em>
+</p>
