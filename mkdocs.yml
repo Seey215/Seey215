@@ -13,7 +13,7 @@ repo_url: https://github.com/Seey215/Seey215
 theme:
   name: material
   language: zh
-  custom_dir: material/overrides
+  custom_dir: overrides
   features:
     - announce.dismiss
     - content.action.view
@@ -22,9 +22,9 @@ theme:
     - content.tooltips
     - navigation.footer
     - navigation.indexes
-    - navigation.sections
-    - navigation.tabs
     - navigation.path
+    - navigation.prune
+    - navigation.tabs
     - navigation.top
     - navigation.tracking
     - search.highlight
@@ -37,14 +37,14 @@ theme:
       accent: teal
       toggle:
         icon: material/toggle-switch
-        name: Switch to dark mode
+        name: 切换到暗色模式
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
       accent: indigo
       toggle:
         icon: material/toggle-switch-off
-        name: Switch to system preference
+        name: 切换到浅色模式
   font:
     text: Roboto
     code: Roboto Mono
@@ -60,11 +60,6 @@ plugins:
   - minify:
       minify_html: true
 
-# Hooks
-hooks:
-  - material/overrides/hooks/shortcodes.py
-  - material/overrides/hooks/translations.py
-
 # Additional configuration
 extra:
   status:
@@ -76,95 +71,28 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Seey215
-  # alternate:
-  #   - name: 中文
-  #     link: /
-  #     lang: zh
-  #   - name: English
-  #     link: /en/ 
-  #     lang: en
-
-# Extensions
-markdown_extensions:
-  - abbr
-  - admonition
-  - attr_list
-  - def_list
-  - footnotes
-  - md_in_html
-  - toc:
-      permalink: false
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.magiclink:
-      normalize_issue_symbols: true
-      repo_url_shorthand: true
-      user: seey
-      repo: seey215
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.snippets:
-      auto_append:
-        - includes/mkdocs.md
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
-      combine_header_slug: true
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
-
-not_in_nav: |
-  /tutorials/**/*.md
+    - icon: fontawesome/brands/qq
+      link: https://seey215.cn/
 
 # Page tree
 nav:
   - 首页: index.md
-  - Getting started:
-    - Installation: getting-started.md
-    - Creating your site: creating-your-site.md
-    - Tutorials:
-      - tutorials/index.md
-      - "Blogs":
-        - tutorials/blogs/basic.md
-        - tutorials/blogs/navigation.md
-        - tutorials/blogs/engage.md
-      - "Social cards":
-        - tutorials/social/basic.md
-        - tutorials/social/custom.md
-    - Changelog:
-      - changelog/index.md
-      - How to upgrade: upgrade.md
-  - 英语:
-    - english/index.md
-  - 算法:
-    - algorithm/index.md
-  - 数据库:
-    - database/connect.md
-    - database/architect.md
-    - database/sql-analyze.md
-    - database/engine-table.md
-    - database/service.md
-  # - Blog:
-  #   - blog/index.md
-
+  - 学习:
+    - 英语:
+      - english/index.md
+      - english/grammar.md
+      - english/prep.md
+      - english/temp.md
+    - 算法:
+      - algorithm/index.md
+      - algorithm/temp.md
+    - 数据库:
+      - database/index.md
+      - database/connect.md
+      - database/architect.md
+      - database/sql-analyze.md
+      - database/engine-table.md
+      - database/service.md
+      - database/temp.md
+  - Blog:
+    - blog/index.md
