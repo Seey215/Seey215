@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://seey215.github.io/Seey215/algorithm/temp/</loc>
+         <lastmod>2024-07-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://seey215.github.io/Seey215/blog/</loc>
          <lastmod>2024-07-31</lastmod>
          <changefreq>daily</changefreq>
@@ -46,6 +51,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://seey215.github.io/Seey215/database/temp/</loc>
+         <lastmod>2024-07-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://seey215.github.io/Seey215/english/</loc>
          <lastmod>2024-07-31</lastmod>
          <changefreq>daily</changefreq>
@@ -57,6 +67,11 @@
     </url>
     <url>
          <loc>https://seey215.github.io/Seey215/english/prep/</loc>
+         <lastmod>2024-07-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://seey215.github.io/Seey215/english/temp/</loc>
          <lastmod>2024-07-31</lastmod>
          <changefreq>daily</changefreq>
     </url>
