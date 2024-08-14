@@ -1,5 +1,5 @@
 # Project information
-site_name: Seey
+site_name: Be a Super-Coder
 site_url: https://seey215.github.io/Seey215/
 site_author: Seey
 site_description: >-
@@ -85,6 +85,9 @@ nav:
       - english/grammar.md
       - english/prep.md
       - english/temp.md
+      - 雅思:
+        - english/ielts-speaking.md
+        - english/ielts-writing.md
     - 算法:
       - algorithm/index.md
       - algorithm/temp.md
@@ -99,4 +102,4 @@ nav:
   - 博客:
     - blog/index.md
   - 关于:
-    - about.md
+    - about/index.md
