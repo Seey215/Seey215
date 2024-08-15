@@ -2,77 +2,92 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://seey215.github.io/Seey215/</loc>
-         <lastmod>2024-07-31</lastmod>
+         <lastmod>2024-08-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://seey215.github.io/Seey215/about/</loc>
+         <lastmod>2024-08-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://seey215.github.io/Seey215/algorithm/</loc>
-         <lastmod>2024-07-31</lastmod>
+         <lastmod>2024-08-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://seey215.github.io/Seey215/algorithm/temp/</loc>
-         <lastmod>2024-07-31</lastmod>
+         <lastmod>2024-08-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://seey215.github.io/Seey215/blog/</loc>
-         <lastmod>2024-07-31</lastmod>
+         <lastmod>2024-08-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://seey215.github.io/Seey215/database/</loc>
-         <lastmod>2024-07-31</lastmod>
+         <lastmod>2024-08-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://seey215.github.io/Seey215/database/architect/</loc>
-         <lastmod>2024-07-31</lastmod>
+         <lastmod>2024-08-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://seey215.github.io/Seey215/database/connect/</loc>
-         <lastmod>2024-07-31</lastmod>
+         <lastmod>2024-08-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://seey215.github.io/Seey215/database/engine-table/</loc>
-         <lastmod>2024-07-31</lastmod>
+         <lastmod>2024-08-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://seey215.github.io/Seey215/database/service/</loc>
-         <lastmod>2024-07-31</lastmod>
+         <lastmod>2024-08-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://seey215.github.io/Seey215/database/sql-analyze/</loc>
-         <lastmod>2024-07-31</lastmod>
+         <lastmod>2024-08-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://seey215.github.io/Seey215/database/temp/</loc>
-         <lastmod>2024-07-31</lastmod>
+         <lastmod>2024-08-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://seey215.github.io/Seey215/english/</loc>
-         <lastmod>2024-07-31</lastmod>
+         <lastmod>2024-08-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://seey215.github.io/Seey215/english/grammar/</loc>
-         <lastmod>2024-07-31</lastmod>
+         <lastmod>2024-08-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://seey215.github.io/Seey215/english/ielts-speaking/</loc>
+         <lastmod>2024-08-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://seey215.github.io/Seey215/english/ielts-writing/</loc>
+         <lastmod>2024-08-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://seey215.github.io/Seey215/english/prep/</loc>
-         <lastmod>2024-07-31</lastmod>
+         <lastmod>2024-08-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://seey215.github.io/Seey215/english/temp/</loc>
-         <lastmod>2024-07-31</lastmod>
+         <lastmod>2024-08-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
