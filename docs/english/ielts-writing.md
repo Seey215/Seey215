@@ -143,7 +143,6 @@ Finally, ...
 
 It is clear that the ... stages ... while the rest ...
 
-
 ---
 
 ### 折线图
@@ -198,3 +197,113 @@ However, from 1990 to 2020, the Philippines saw a slight decline in urbanization
 Based on the projected data, it is expected that by the year 2040, the proportions of the urban population in all four countries will continue to experience rapid growth, among which Malaysia is expected to maintain its dominant position in urbanization, with over 80% of its population living in cities.
 
 根据预测数据，预计到2040年，所有四个国家的城市人口比例将持续快速增长，其中马来西亚预计将继续在城市化方面保持主导地位，城市人口比例将超过80%。
+
+### 条形图
+
+> The chart below shows the number of households in the US by their annual income in 2007, 2011 and 2015.
+>
+> Summarise the information by selecting and reporting the main features, and make comparisons where relevant.
+
+![](./assets/graph-bar-income.png)
+
+#### 优秀范文1
+
+6分，264词
+
+The bar chart illustrates the number of American households sorted by their income in each of the three years, 2007, 2011, and 2015. It is noticeable that the numbers of the highest-income families and lower-income households were constantly higher than the figures for the medium-level group in the three given years. Moreover, the former income groups saw an overall rise in numbers from 2007 to 2015 while the latter remained stable during the same period.
+
+柱状图显示了2007年、2011年和2015年按年收入金额排列的美国家庭数量。值得注意的是，在这三年中，最高收入家庭和低收入家庭的数量一直高于中等收入家庭的数量。此外，从2007年到2015年，前者的家庭数量总体呈上升趋势，而后者在同一时期保持稳定。
+
+In 2007, the largest number of households had an annual income of $100,000 or more, totaling about 30 million. Following closely was the number of households earning between $25,000 and $49,999, with a quantity ranging from 25 million to 30 million. A slightly smaller number of households, around 25 million, had an income below $25,000. Around 20 million households fell into the category of earning between $50,000 and $74,999. Lastly, households with incomes ranging from $75,000 to $99,999 numbered approximately 15 million.
+
+在2007年，拥有年收入10万美元或以上的家庭数量最多，约为3000万户。紧随其后的是年收入在25000美元至49999美元之间的家庭，数量在2500万至3000万之间。年收入低于25000美元的家庭数量稍低，约2500万户。约有2000万户家庭的收入处于50000美元至74999美元之间。最后，年收入在75000美元至99999美元之间的家庭大约有1500万户。
+
+But in 2011, things changed. The $25,000-$49,999 group became the biggest with around 30 million households. The households earning $100,000 or more went down to about 27 million. This was even less than those earning below $25,000. The $75,000-$99,999 group was still the smallest and had fewer households than in 2007.
+
+但在2011年，情况发生了变化。25000美元至49999美元的群体数量变为最多，有约3000万户家庭。收入10万美元或以上的家庭减少到约2700万。这甚至低于那些收入低于25000美元的家庭。与2007年相比，75000至99999美元的家庭占比最小，家庭数量更少了。
+
+By the year 2015, the category of $100,000 or more regained its position as the largest group, with the count approximating 33 million households. Both the categories of less than $25,000 and $25,000-$49,999 witnessed a marginal decrease compared with those in 2011. The $75,000-$99,999 bracket consistently remained the smallest group, barely reaching the 15 million mark.
+
+到 2015 年，10万美元或以上的家庭重新成为人口最多的群体，数量约为3300万户。与 2011 年相比，25000美元以下和25000美元至49999美元这两个类别的人数都略有减少。75000至99999美元组别始终是数量最少的组别，勉强达到1500万。
+
+> 这篇范文用了大量的数字和数量词来表达具体的数据，让读者更清晰地理解各个收入群体的人数和比例。总体结构比较清晰，但缺乏连贯性。
+>
+> 此外，范文还使用了一些表示顺序、对比和转折的过渡词，如“following closely (紧跟着)”、“slightly smaller (略小于)”、“lastly (最后)”和“marginally decrease (略有减少)”，使文章更连贯、易懂。但本文的词汇多样性和准确性仍有提升的空间，语法结构也是简单句偏多，缺乏一些高级句式的运用。
+
+
+#### 优秀范文2
+
+6.5分，271词
+
+The bar chart delineates the variation in the number of American households categorized by their annual income in three different years. It is worth noting that in the two groups with annual incomes ranging from $50,000 to $99,999, the number of households remains relatively unchanged. Despite this, the quantity in each of the remaining income groups demonstrated an ascending trend with significant variability.
+
+柱状图描述了按年收入分类的美国家庭数量在三个不同年份的变化情况。值得注意的是，在年收入为50000至99999美元的两组中，家庭数量基本保持不变。尽管如此，其余各收入组别的家庭数量均呈上升趋势，且变化很大。
+
+In 2007, the largest number of households belonged to the category with an annual income of $100,000 or more, totaling around 30 million. This was followed by the group with incomes ranging from $25,000 to $49,999 with a number between 25 to 30 million. The category of households earning less than $25,000 annually had a slightly lower number, around 25 million. Subsequently, there were about 20 million households with incomes between $50,000 and $74,999. Lastly, households with incomes between $75,000 and $99,999 accounted for approximately 15 million households.
+
+2007 年，年收入在10万美元或以上的家庭数量最多，约有3000万户。紧随其后的是年收入在25000美元至49999美元之间的家庭，数量在2500万至3000万之间。其次是年收入在25000美元以下的家庭，数量略低，占2500万左右。年收入在50000美元至74999美元之间的家庭数量也有2000万户。最后是年收入在75000美元至99999美元之间的家庭，约有1500 万户。
+
+In 2011, this situation underwent some changes. The bracket of $25,000-$49,999 emerged as the largest group, encompassing around 30 million households. Intriguingly, the category of $100,000 or more witnessed a decline to around 27 million, even lower than the less than $25,000 group. The $75,000-$99,999 bracket persistently remained the smallest group, with the number of households even experiencing a decrease compared with that in 2007.
+
+到2011年，这种情况有了一些改变。25000美元至49999美元的收入区间成为人口最多的组别，约有3000 万户家庭。有趣的是，10万美元或以上的家庭减少到约2700万户，甚至低于25000美元以下的家庭。75000至99999美元组别始终是人口最少的群体，家庭数量甚至比2007年有所减少。
+
+By the year 2015, the category of $100,000 or more regained its position as the largest group, with the count approximating 33 million households. Both the categories of less than $25,000 and $25,000-$49,999 witnessed a marginal decrease compared with those in 2011. The $75,000-$99,999 bracket consistently remained the smallest group, barely reaching the 15 million mark.
+
+到2015年，10万美元或以上的家庭重新成为人口最多的群体，数量约为3300万户。与 2011 年相比，25000美元以下和25000美元至49999美元这两个类别的人数都略有减少。75000至99999美元组别始终是人口最少的组别，勉强达到1500万。
+
+> 这篇范文运用了更多的衔接词和短语，如“intriguingly (有趣的是)”和“by the year (某年之前)”等，使得整篇文章更有连贯性。
+>
+> 6.5分的范文词汇丰富且准确，如“underwent (经历)”和“persistently (始终)”；一些句子结构也很亮眼，例如，在第二个主体段中，作者使用了动词“emerged (出现)”和现在分词“encompassing (包括)”来描述25000至49999美元收入群体的变化和规模，以展示其高水平的词汇和语法能力。这种表达方式清晰地传达了相关信息。
+
+
+### 条形图
+
+> The chart below gives information about how families in one country spent their weekly income in 1968 and in 2018.
+>
+> Summarise the information by selecting and reporting the main features and make comparisons where relevant.
+
+![](./assets/graph-bar-costs.png)
+
+#### 我的作文
+
+The bar graph illustrates the average weekly expenditure by families in a specific region in 1968 and 2018, across various categories including food, housing, fuel and power, clothing and footwear, household goods, transport, and leisure activities.
+
+In summary, there was a noticeable decline in spending on food, fuel and power, clothing and footwear, as well as personal goods, whereas costs for housing, transport, and leisure activities rose significantly. Expenditure on household goods remained relatively stable.
+
+In 1968, the largest share of family spending was on food, accounting for 35%, while the smallest portion was allocated to fuel and power, at just over 5%.
+
+By 2018, the highest proportion of spending had shifted to leisure activities, at just over 20%, while the lowest proportions were for personal goods and fuel and power, both nearing 5%.
+
+Comparing the proportions of all costs in 1968 and 2018, it is evident that family expenditures became more evenly distributed across the different categories.
+
+#### 优秀范文1
+
+6分，180词
+
+The bar chart shows the percentage of weekly household spending on various items in a country in 1968 and in 2018. In 1968, families spent most of their money on food. But in 2018, leisure was what families cared about the most. A significant point is that the money on household goods stayed the same in both years.
+
+这个柱状图展示了1968年和2018年，某个国家的家庭每周在各个方面的花费占比。1968年，家庭的大部分钱都花在了食物上。但到了2018年，他们在休闲活动上的花费最多。值得注意的是，两年中用于家庭物品的花费都保持不变。
+
+In 1968, nearly 35% of the money went to food. But 50 years later, this dropped to 17%. In the same period, there was less money spent on fuel and power (it went down from 7% to 4%), clothing and footwear (from 10% to 5%), and personal goods (from 8% to 4%). In both years, families spent around 8% of their money on household goods.
+
+1968年，大约有35%的钱花在了食物上。但50年后，这一比例下降到了17%。在同一时期，花在燃料和能源上的钱减少了（从7%下降到4%），在衣服和鞋子上的花费也减少了（从10%下降到5%），个人物品的花费也减少了（从8%下降到4%）。在这两年里，家庭都花了8%的钱在家里的物品上。
+
+By 2018, leisure was what families cared about the most. They spent about 22% of their money on it, which was a big jump from 9% in 1968. In these 50 years, families also spent more on homes and moving around or transport – they almost spent 9% more on homes and 6% more on transport.
+
+到2018年，休闲活动成为家庭开支最多的方面。他们在这方面花了22%左右的钱，这比1968年的9%有了大幅增加。在这50年里，家庭在住房和交通上的花费也增加了——他们大约在住房上多花了9%，在交通上多花了6%。
+
+#### 优秀范文2
+
+6.5分，170词
+
+The bar chart shows the percentage of weekly household spending on various items in a country in 1968 and in 2018. In 1968, families spent most of their money on food. But in 2018, leisure was what families cared about the most. A significant point is that the money spent on household goods stayed the same in both years.
+
+这个柱状图展示了1968年和2018年，某个国家的家庭每周在各个方面的花费占比。1968年，家庭的大部分钱都花在了食物上。但到了2018年，他们在休闲活动上的花费最多。值得注意的是，两年中用于家庭物品的花费都保持不变。
+
+In 1968, the largest proportion of household expenses was food, which accounted for about 35%. Families spent roughly the same amount, around 10%, on housing and clothing and footwear. All the other categories, including household goods, personal goods, transport, and leisure, hovered around 7—8%. The least spending was on fuel and power, which was nearly 6%.
+
+在1968年，占家庭开销比例最大部分的是食物，大约占了35%。在住房以及服装和鞋类上的支出大致相同，均为10%左右。其他所有类别，包括家用商品、个人用品、交通和休闲，都在7～8%左右。支出最少的是燃料和能源，约为6%。
+
+By 2018, there were noticeable changes in the spending. Leisure took the lead with about 22% of the total expenditure. The money on leisure in 2018 was more than double that in 1968. However, most categories saw a drop in 2018 compared with those in 1968, with the exceptions being housing, transport, and leisure.
+
+到了2018年，支出模式出现了明显的变化。休闲成为了主要的支出，大约占总支出的22%。2018年在休闲上的花费是1968年的两倍多。然而，与1968年相比，2018年的大多数类别都有所下降，只有住房、交通和休闲三个类别例外。
