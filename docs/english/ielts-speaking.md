@@ -1,4 +1,10 @@
-# 雅思口语 - IELTS Speaking
+# IELTS Speaking
+
+> part1：30s内完成的简单应答 （简介以及回答）
+> 
+> part2：1min内完成的普通介绍（个人陈述）
+> 
+> part3：1min30s的详细作答（双向讨论）
 
 ## 1 范文
 

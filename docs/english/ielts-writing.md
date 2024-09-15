@@ -1,4 +1,8 @@
-# 雅思写作 - IELTS Writing
+# IELTS Writing
+
+> task 1 至少 150 wards 的小作文（分析、描述或说明一份表格/曲线图/柱状图/示意图）
+> task 2 至少 250 wards 的大作文（议论性文章）
+> 共计60min
 
 ## Task 1 小作文
 

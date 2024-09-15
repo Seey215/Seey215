@@ -1,7 +1,5 @@
 ## Made with MkDocs
 
-Made with Material for MkDocs.
-
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Commands

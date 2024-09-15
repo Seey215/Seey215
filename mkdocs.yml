@@ -82,12 +82,14 @@ nav:
   - 学习:
     - 英语:
       - english/index.md
+      - english/wards900.md
       - english/grammar.md
       - english/prep.md
+      - english/ielts-listen.md
+      - english/ielts-read.md
+      - english/ielts-writing.md
+      - english/ielts-speaking.md
       - english/temp.md
-      - 雅思:
-        - english/ielts-speaking.md
-        - english/ielts-writing.md
     - 算法:
       - algorithm/index.md
       - algorithm/temp.md
