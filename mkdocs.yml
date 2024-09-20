@@ -73,35 +73,49 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Seey215
+    - icon: fontawesome/brands/linkedin
+      link: https://seey215.cn/
+    - icon: fontawesome/brands/weixin
+      link: https://seey215.cn/
     - icon: fontawesome/brands/qq
+      link: https://seey215.cn/
+    - icon: fontawesome/brands/tiktok
+      link: https://seey215.cn/
+    - icon: fontawesome/brands/bilibili
       link: https://seey215.cn/
 
 # Page tree
 nav:
   - 首页: index.md
-  - 学习:
-    - 英语:
-      - english/index.md
-      - english/wards900.md
-      - english/grammar.md
-      - english/prep.md
-      - english/ielts-listen.md
-      - english/ielts-read.md
-      - english/ielts-writing.md
-      - english/ielts-speaking.md
-      - english/temp.md
+  - 技术:
     - 算法:
       - algorithm/index.md
-      - algorithm/temp.md
+      - Temp: algorithm/temp.md
     - 数据库:
       - database/index.md
-      - database/connect.md
-      - database/architect.md
-      - database/sql-analyze.md
-      - database/engine-table.md
-      - database/service.md
-      - database/temp.md
+      - 1 连接配置: database/connect.md
+      - 2 架构: database/architect.md
+      - 3 SQL语句: database/sql-analyze.md
+      - 4 存储引擎&表结构: database/engine-table.md
+      - 5 业务: database/service.md
+      - Temp: database/temp.md
   - 博客:
     - blog/index.md
+  - 雅思:
+    - english/index.md
+    - Basic Words: english/words900.md
+    - Basic Grammar: english/grammar.md
+    - Basic Preposition: english/prep.md
+    - IELTS Listen: english/ielts-listen.md
+    - IELTS Read: english/ielts-read.md
+    - IELTS Writing: english/ielts-writing.md
+    - IELTS Speaking:
+      - english/ielts-speaking.md
+      - Speaking Part1: english/ielts-speaking-part1.md
+      - Speaking Part2: english/ielts-speaking-part2.md
+      - Speaking Part3: english/ielts-speaking-part3.md
+    - Temp: english/temp.md
+  - 招募我:
+    - 自我评价: about/resume.md
   - 关于:
     - about/index.md
