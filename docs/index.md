@@ -1,7 +1,10 @@
 ---
 template: home.html
 title: Seey
-social:
-  cards_layout_options:
-    title: Documentation that simply works
+# hide:
+#   - navigation
+#   - toc
+# social:
+#   cards_layout_options:
+#     title: Documentation that simply works
 ---

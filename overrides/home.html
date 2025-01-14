@@ -1,26 +1,78 @@
 {% extends "main.html" %}
 {% block tabs %}
-  {{ super() }}
-  <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
-  <section class="mdx-container">
-    <div class="md-grid md-typeset">
-      <div class="mdx-hero">
-        <div class="mdx-hero__image">
-          <img src="assets/images/illustration.png" alt="" width="1659" height="1200" draggable="false">
-        </div>
-        <div class="mdx-hero__content">
-          <h1>司雨的超人养成计划</h1>
-          <p>{{ config.site_description }}</p>
-          <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}" class="md-button md-button--primary">
-            Quick start
-          </a>
-          <a href="{{ 'blog/' | url }}" title="博客" class="md-button">
-            Get Blog
-          </a>
-        </div>
+{{ super() }}
+<!-- <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style> -->
+<!-- Additional styles for landing page -->
+<style>
+  /* Application header should be static for the landing page */
+  .md-header {
+    position: initial;
+  }
+
+  /* Remove spacing, as we cannot hide it completely */
+  .md-main__inner {
+    margin: 0;
+  }
+
+  /* Hide main content for now */
+  .md-content {
+    display: none;
+  }
+
+  .web-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  /* Hide table of contents */
+  @media screen and (min-width: 60em) {
+    .md-sidebar--secondary {
+      display: none;
+    }
+  }
+
+  /* Hide navigation */
+  @media screen and (min-width: 76.25em) {
+    .md-sidebar--primary {
+      display: none;
+    }
+  }
+</style>
+
+<section class="mdx-container">
+  <div class="md-grid md-typeset">
+
+    <picture class="mdx-parallax__layer" style="--md-parallax-depth: 8;--md-image-position: 70%">
+      <source type="image/avif"
+        srcset="assets/images/layers/1-landscape.avif 1280w, assets/images/layers/1-landscape@2x.avif 1920w, assets/images/layers/1-landscape@3x.avif 2560w, assets/images/layers/1-landscape@4x.avif 3840w">
+      <source type="image/webp"
+        srcset="assets/images/layers/1-landscape.webp 1280w, assets/images/layers/1-landscape@2x.webp 1920w, assets/images/layers/1-landscape@3x.webp 2560w, assets/images/layers/1-landscape@4x.webp 3840w">
+      <img
+        srcset="assets/images/layers/1-landscape.png 1280w, assets/images/layers/1-landscape@2x.png 1920w, assets/images/layers/1-landscape@3x.png 2560w, assets/images/layers/1-landscape@4x.png 3840w"
+        src="assets/images/layers/1-landscape.png" alt="" class="mdx-parallax__image">
+    </picture>
+    <div class="mdx-hero">
+
+      <div class="mdx-hero__image">
+        <img src="assets/images/illustration.png" alt="" width="1659" height="1200" draggable="false">
       </div>
+
+      <div class="mdx-hero__content">
+        <h1>Be a Super-Coder</h1>
+        <p>{{ config.site_description }}</p>
+        <a href="{{ page.next_page.url | url }}" title="{{ page.next_page.title | e }}"
+          class="md-button md-button--primary">
+          Quick Start
+        </a>
+        <a href="{{ 'blog/' | url }}" title="Blog" class="md-button">
+          Get Blog
+        </a>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 {% endblock %}
 {% block content %}{% endblock %}
 {% block footer %}{% endblock %}

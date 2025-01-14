@@ -3,19 +3,23 @@ site_name: Be a Super-Coder
 site_url: https://seey215.github.io/Seey215/
 site_author: Seey
 site_description: >-
-  欢迎访问我的个人网页！
+  Welcome to my personal website! 
   <br>
-  这里记录了我的学习笔记、个人经历和成就等内容。
+  Here I record my learning notes, personal experiences, and achievements, even secrets.
 
 # Repository
 repo_name: Seey215/Seey215
 repo_url: https://github.com/Seey215/Seey215
 
+# Copyright
+copyright: 'Copyright &copy; 2024 - 2025 Seey'
+
 # Configuration
 theme:
   name: material
-  language: zh
   custom_dir: overrides
+  # language: zh
+  language: EN
   features:
     - announce.dismiss
     - content.action.view
@@ -39,18 +43,18 @@ theme:
       accent: teal
       toggle:
         icon: material/toggle-switch
-        name: 切换到暗色模式
+        name: Switch to Dark Mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
       accent: indigo
       toggle:
         icon: material/toggle-switch-off
-        name: 切换到浅色模式
+        name: Switch to Light Mode
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: assets/favicon.png
+  favicon: assets/SeeyLogo.png
   icon:
     logo: logo
 
@@ -73,49 +77,54 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Seey215
-    - icon: fontawesome/brands/linkedin
-      link: https://seey215.cn/
-    - icon: fontawesome/brands/weixin
-      link: https://seey215.cn/
-    - icon: fontawesome/brands/qq
-      link: https://seey215.cn/
     - icon: fontawesome/brands/tiktok
-      link: https://seey215.cn/
-    - icon: fontawesome/brands/bilibili
-      link: https://seey215.cn/
+      link: https://v.douyin.com/iyv4JuAx/
+    # - icon: fontawesome/brands/linkedin
+    #   link: https://seey215.cn/
+    # - icon: fontawesome/brands/weixin
+    #   link: https://seey215.cn/
+    # - icon: fontawesome/brands/qq
+    #   link: https://seey215.cn/
+    # - icon: fontawesome/brands/bilibili
+    #   link: https://seey215.cn/
 
 # Page tree
 nav:
-  - 首页: index.md
-  - 技术:
-    - 算法:
+  - Home: index.md
+  # - 首页: static_site/index.html
+  - Tech:
+    - Algorithm:
       - algorithm/index.md
       - Temp: algorithm/temp.md
-    - 数据库:
-      - database/index.md
-      - 1 连接配置: database/connect.md
-      - 2 架构: database/architect.md
-      - 3 SQL语句: database/sql-analyze.md
-      - 4 存储引擎&表结构: database/engine-table.md
-      - 5 业务: database/service.md
-      - Temp: database/temp.md
-  - 博客:
+    - DataBase:
+      - MySQL: 
+        - database/index.md
+        - 1 连接配置: database/connect.md
+        - 2 架构: database/architect.md
+        - 3 SQL语句: database/sql-analyze.md
+        - 4 存储引擎&表结构: database/engine-table.md
+        - 5 业务: database/service.md
+        - Temp: database/temp.md
+  - Essay:
+    - essay/index.md
+    - 聪明的关键: essay/neuron.md
+  - Blog:
     - blog/index.md
-  - 雅思:
-    - english/index.md
-    - Basic Words: english/words900.md
-    - Basic Grammar: english/grammar.md
-    - Basic Preposition: english/prep.md
-    - IELTS Listen: english/ielts-listen.md
-    - IELTS Read: english/ielts-read.md
-    - IELTS Writing: english/ielts-writing.md
-    - IELTS Speaking:
-      - english/ielts-speaking.md
-      - Speaking Part1: english/ielts-speaking-part1.md
-      - Speaking Part2: english/ielts-speaking-part2.md
-      - Speaking Part3: english/ielts-speaking-part3.md
-    - Temp: english/temp.md
-  - 招募我:
+  - Recruit:
     - 自我评价: about/resume.md
-  - 关于:
+  - About:
     - about/index.md
+  # - 雅思:
+  #   - english/index.md
+  #   - Basic Words: english/words900.md
+  #   - Basic Grammar: english/grammar.md
+  #   - Basic Preposition: english/prep.md
+  #   - IELTS Listen: english/ielts-listen.md
+  #   - IELTS Read: english/ielts-read.md
+  #   - IELTS Writing: english/ielts-writing.md
+  #   - IELTS Speaking:
+  #     - english/ielts-speaking.md
+  #     - Speaking Part1: english/ielts-speaking-part1.md
+  #     - Speaking Part2: english/ielts-speaking-part2.md
+  #     - Speaking Part3: english/ielts-speaking-part3.md
+  #   - Temp: english/temp.md
