@@ -1,24 +1,27 @@
 # Project information
-site_name: Be a Super-Coder
+site_name: Seey
 site_url: https://seey215.github.io/Seey215/
 site_author: Seey
 site_description: >-
   Welcome to my personal website! 
   <br>
   Here I record my learning notes, personal experiences, and achievements, even secrets.
+  <br><br>
+  Click "Latest Version" to access the latest version of the website, which is powered by GitHub Action, should you need it.
 
 # Repository
 repo_name: Seey215/Seey215
 repo_url: https://github.com/Seey215/Seey215
 
 # Copyright
-copyright: 'Copyright &copy; 2024 - 2025 Seey'
+copyright: >
+  Copyright&copy;2024-2025 Seey —
+  <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">赣ICP备2024035936号-1</a>
 
 # Configuration
 theme:
   name: material
   custom_dir: overrides
-  # language: zh
   language: EN
   features:
     - announce.dismiss
@@ -93,9 +96,6 @@ nav:
   - Home: index.md
   # - 首页: static_site/index.html
   - Tech:
-    - Algorithm:
-      - algorithm/index.md
-      - Temp: algorithm/temp.md
     - DataBase:
       - MySQL: 
         - database/index.md
@@ -104,10 +104,13 @@ nav:
         - 3 SQL语句: database/sql-analyze.md
         - 4 存储引擎&表结构: database/engine-table.md
         - 5 业务: database/service.md
-        - Temp: database/temp.md
+    - Algorithm:
+      - algorithm/index.md
   - Essay:
     - essay/index.md
     - 聪明的关键: essay/neuron.md
+    - 应届生人数: essay/graduate.md
+    - 优雅的绅士: essay/gentleman.md
   - Blog:
     - blog/index.md
   - Recruit:
@@ -127,4 +130,3 @@ nav:
   #     - Speaking Part1: english/ielts-speaking-part1.md
   #     - Speaking Part2: english/ielts-speaking-part2.md
   #     - Speaking Part3: english/ielts-speaking-part3.md
-  #   - Temp: english/temp.md

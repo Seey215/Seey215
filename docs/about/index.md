@@ -16,13 +16,11 @@ Made with [Material for MkDocs](https://www.mkdocs.org).
 > * `mkdocs -h` - Print help message and exit.
 > * `mkdocs gh-deploy` - Deploy to GitHub Pages.
 
-### action order
+### Action Order
 
 ```shell
 # 检查Nginx配置是否正确
 nginx -t
-# nginx: [warn] conflicting server name "" on 0.0.0.0:80, ignored
-# nginx: [warn] conflicting server name "seey215.cn" on 0.0.0.0:443, ignored
 # nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 # nginx: configuration file /etc/nginx/nginx.conf test is successful
 # 主页路径：/usr/share/nginx/html
