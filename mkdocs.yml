@@ -115,6 +115,15 @@ nav:
     - blog/index.md
   - Recruit:
     - 自我评价: about/resume.md
+  - Project:
+    - project/index.md
+    - SSO单点登录:
+        - project/sso/index.md
+        - JWT: project/sso/jwt.md
+        # - SSO: project/sso/sso.md
+    - Canary灰度发布:
+        - project/canary/index.md
+        - 灰度发布: project/canary/gray.md
   - About:
     - about/index.md
   # - 雅思:
