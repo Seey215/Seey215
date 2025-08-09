@@ -96,21 +96,24 @@ nav:
   - Home: index.md
   # - 首页: static_site/index.html
   - Tech:
+    - Redis:
+      - tech/redis/index.md
     - DataBase:
-      - MySQL: 
-        - database/index.md
-        - 1 连接配置: database/connect.md
-        - 2 架构: database/architect.md
-        - 3 SQL语句: database/sql-analyze.md
-        - 4 存储引擎&表结构: database/engine-table.md
-        - 5 业务: database/service.md
+      - MySQL:
+        - tech/database/index.md
+        - 1 连接配置: tech/database/connect.md
+        - 2 架构: tech/database/architect.md
+        - 3 SQL语句: tech/database/sql-analyze.md
+        - 4 存储引擎&表结构: tech/database/engine-table.md
+        - 5 业务: tech/database/service.md
     - Algorithm:
-      - algorithm/index.md
+      - tech/algorithm/index.md
   - Essay:
     - essay/index.md
     - 聪明的关键: essay/neuron.md
     - 应届生人数: essay/graduate.md
     - 优雅的绅士: essay/gentleman.md
+    - 高效的增肌: essay/muscle-building.md
   - Blog:
     - blog/index.md
   - Recruit:
