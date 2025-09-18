@@ -1,0 +1,2614 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Welcome to my personal website!  <br> Here I record my learning notes, personal experiences, and achievements, even secrets. <br><br> Click "Latest Version" to access the latest version of the website, which is powered by GitHub Action, should you need it.">
+      
+      
+        <meta name="author" content="Seey">
+      
+      
+        <link rel="canonical" href="https://seey215.github.io/Seey215/tech/mcp/expert-consensus-on-building-mcp/">
+      
+      
+        <link rel="prev" href="../../algorithm/">
+      
+      
+        <link rel="next" href="../expert-consensus-on-building-mcp.zh-CN/">
+      
+      
+      <link rel="icon" href="../../../assets/SeeyLogo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Expert Consensus on Building MCP - Seey</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config",""),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  <link rel="stylesheet" href="../../../assets/stylesheets/custom.7c86dd97.min.css">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#expert-consensus-on-building-mcp-with-code-examples" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Don't show this again">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+              </button>
+            
+            
+  First met <strong>@seey</strong> on
+  <a rel="me" href="https://v.douyin.com/iyv4JuAx/" target="_blank">
+    <span class="twemoji mastodon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M448.5 209.9c-44 .1-87-13.6-122.8-39.2v178.7c0 33.1-10.1 65.4-29 92.6s-45.6 48-76.6 59.6-64.8 13.5-96.9 5.3-60.9-25.9-82.7-50.8-35.3-56-39-88.9 2.9-66.1 18.6-95.2 40-52.7 69.6-67.7 62.9-20.5 95.7-16v89.9c-15-4.7-31.1-4.6-46 .4s-27.9 14.6-37 27.3-14 28.1-13.9 43.9 5.2 31 14.5 43.7 22.4 22.1 37.4 26.9 31.1 4.8 46-.1 28-14.4 37.2-27.1 14.2-28.1 14.2-43.8V0h88c-.1 7.4.6 14.9 1.9 22.2 3.1 16.3 9.4 31.9 18.7 45.7s21.3 25.6 35.2 34.6c19.9 13.1 43.2 20.1 67 20.1V210z"/></svg>
+    </span>
+    <strong>抖音</strong>
+  </a>
+  or
+  <a href="https://space.bilibili.com/1614772359" target="_blank">
+    <span class="twemoji mastodon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92c-26.4-.8-48.2-9.8-65.3-27.2S.7 396.5 0 368.2V169.8c.8-26 9.7-47.6 26.7-65.7C43.8 87.8 65.5 78.8 92 78h29.4L96 52.2c-5.7-5.7-8.6-13-8.6-21.8S90.3 14.3 96 8.6 109 0 117.9 0s16.1 2.9 21.9 8.6L213.1 78h88l74.5-69.4C381.7 2.9 389.2 0 398 0s16.1 2.9 21.9 8.6c5.7 5.7 8.6 13 8.6 21.8s-2.9 16.1-8.6 21.8L394.6 78h29.3c26.4.8 48 9.8 64.7 26.1m-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96c-9.6.4-17.4 3.7-23.6 9.8-6.1 6.1-9.4 13.9-9.8 23.5v194.4c0 9.2 3.3 17 9.8 23.5s14.4 9.8 23.6 9.8h320.4c9.2 0 17-3.3 23.3-9.8s9.7-14.3 10.1-23.5zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5s-17.5-3.2-23.6-9.5-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2s13.2-9.6 23.3-10c9.2.4 17 3.7 23.3 10m191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2s-14 9.5-23.6 9.5-17.4-3.2-23.6-9.5c-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2s14.1-9.6 23.3-10c9.2.4 17 3.7 23.3 10"/></svg>
+    </span>
+    <strong>B站</strong>
+  </a>
+
+
+          </div>
+          
+            <script>var el=document.querySelector("[data-md-component=announce]");if(el){var content=el.querySelector(".md-typeset");__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0)}</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Seey" class="md-header__button md-logo" aria-label="Seey" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Seey
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Expert Consensus on Building MCP
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to Light Mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to Light Mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Seey215/Seey215" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Seey215/Seey215
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../redis/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Tech
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../essay/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Essay
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../about/resume/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Recruit
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../project/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Project
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../about/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Seey" class="md-nav__button md-logo" aria-label="Seey" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    Seey
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Seey215/Seey215" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Seey215/Seey215
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Tech
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tech
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../redis/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Redis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    
+  
+  
+  
+    <a href="../../database/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    DataBase
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../algorithm/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Algorithm
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    MCP
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            MCP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Expert Consensus on Building MCP
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expert Consensus on Building MCP
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-premise-mcp-server-core-class-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic premise: MCP server core class definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consensus-1-tool-design-needs-to-adapt-to-agent-non-deterministic-decision-making-and-refuse-to-replicate-traditional-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consensus 1: Tool design needs to adapt to agent "non-deterministic decision-making" and refuse to replicate traditional APIs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consensus 1: Tool design needs to adapt to agent &#34;non-deterministic decision-making&#34; and refuse to replicate traditional APIs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core logic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positive-example-integrated-tool-solving-customer-duplicate-charges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive example: integrated tool (solving customer duplicate charges)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-example-split-tools-agent-needs-to-string-them-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative example: split tools (agent needs to string them together)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consensus-2-tool-functions-need-high-cohesion-and-focus-on-high-value-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consensus 2: Tool functions need "high cohesion" and focus on high-value workflows
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consensus 2: Tool functions need &#34;high cohesion&#34; and focus on high-value workflows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-logic_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core logic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positive-example-highly-cohesive-get-customer-panoramic-information-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive example: highly cohesive "get customer panoramic information" tool
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-example-split-single-information-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative example: split "single information" tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consensus-3-namespace-needs-to-clearly-distinguish-resourcesservices-to-eliminate-tool-ambiguity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consensus 3: Namespace needs to "clearly distinguish resources/services" to eliminate tool ambiguity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consensus 3: Namespace needs to &#34;clearly distinguish resources/services&#34; to eliminate tool ambiguity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-logic_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core logic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positive-example-standard-namespace-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive example: standard namespace tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-example-ambiguous-named-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative example: ambiguous named tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consensus-4-tool-responses-need-high-signal-low-redundancy-to-reduce-agent-screening-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consensus 4: Tool responses need "high signal, low redundancy" to reduce agent screening costs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consensus 4: Tool responses need &#34;high signal, low redundancy&#34; to reduce agent screening costs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-logic_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core logic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positive-example-high-signal-response-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive example: high signal response tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-example-redundant-response-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative example: redundant response tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consensus-5-token-efficiency-needs-active-control-to-avoid-context-overflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consensus 5: Token efficiency needs "active control" to avoid context overflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consensus 5: Token efficiency needs &#34;active control&#34; to avoid context overflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-logic_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core logic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positive-example-token-efficiency-optimization-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive example: token efficiency optimization tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-example-no-token-control-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative example: no token control tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consensus-6-tool-descriptions-need-to-be-clear-and-unambiguous-to-reduce-agent-misuse-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consensus 6: Tool descriptions need to be "clear and unambiguous" to reduce agent misuse rate
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consensus 6: Tool descriptions need to be &#34;clear and unambiguous&#34; to reduce agent misuse rate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-logic_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core logic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positive-example-clearly-described-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive example: clearly described tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-example-vague-description-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative example: vague description tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consensus-9-error-handling-needs-to-provide-actionable-suggestions-to-guide-agents-to-correct" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consensus 9: Error handling needs to "provide actionable suggestions" to guide agents to correct
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consensus 9: Error handling needs to &#34;provide actionable suggestions&#34; to guide agents to correct">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-logic_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core logic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positive-example-actionable-error-prompt-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive example: actionable error prompt tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-example-vague-error-prompt-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative example: vague error prompt tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-core-principles-of-mcp-tool-code-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: Core principles of MCP tool code design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference documents
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../expert-consensus-on-building-mcp.zh-CN/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    构建MCP的专家共识
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../essay/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Essay
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../blog/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../about/resume/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Recruit
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../project/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Project
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../about/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-premise-mcp-server-core-class-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic premise: MCP server core class definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consensus-1-tool-design-needs-to-adapt-to-agent-non-deterministic-decision-making-and-refuse-to-replicate-traditional-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consensus 1: Tool design needs to adapt to agent "non-deterministic decision-making" and refuse to replicate traditional APIs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consensus 1: Tool design needs to adapt to agent &#34;non-deterministic decision-making&#34; and refuse to replicate traditional APIs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core logic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positive-example-integrated-tool-solving-customer-duplicate-charges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive example: integrated tool (solving customer duplicate charges)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-example-split-tools-agent-needs-to-string-them-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative example: split tools (agent needs to string them together)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consensus-2-tool-functions-need-high-cohesion-and-focus-on-high-value-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consensus 2: Tool functions need "high cohesion" and focus on high-value workflows
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consensus 2: Tool functions need &#34;high cohesion&#34; and focus on high-value workflows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-logic_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core logic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positive-example-highly-cohesive-get-customer-panoramic-information-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive example: highly cohesive "get customer panoramic information" tool
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-example-split-single-information-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative example: split "single information" tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consensus-3-namespace-needs-to-clearly-distinguish-resourcesservices-to-eliminate-tool-ambiguity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consensus 3: Namespace needs to "clearly distinguish resources/services" to eliminate tool ambiguity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consensus 3: Namespace needs to &#34;clearly distinguish resources/services&#34; to eliminate tool ambiguity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-logic_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core logic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positive-example-standard-namespace-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive example: standard namespace tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-example-ambiguous-named-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative example: ambiguous named tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consensus-4-tool-responses-need-high-signal-low-redundancy-to-reduce-agent-screening-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consensus 4: Tool responses need "high signal, low redundancy" to reduce agent screening costs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consensus 4: Tool responses need &#34;high signal, low redundancy&#34; to reduce agent screening costs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-logic_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core logic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positive-example-high-signal-response-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive example: high signal response tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-example-redundant-response-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative example: redundant response tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consensus-5-token-efficiency-needs-active-control-to-avoid-context-overflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consensus 5: Token efficiency needs "active control" to avoid context overflow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consensus 5: Token efficiency needs &#34;active control&#34; to avoid context overflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-logic_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core logic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positive-example-token-efficiency-optimization-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive example: token efficiency optimization tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-example-no-token-control-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative example: no token control tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consensus-6-tool-descriptions-need-to-be-clear-and-unambiguous-to-reduce-agent-misuse-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consensus 6: Tool descriptions need to be "clear and unambiguous" to reduce agent misuse rate
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consensus 6: Tool descriptions need to be &#34;clear and unambiguous&#34; to reduce agent misuse rate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-logic_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core logic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positive-example-clearly-described-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive example: clearly described tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-example-vague-description-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative example: vague description tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consensus-9-error-handling-needs-to-provide-actionable-suggestions-to-guide-agents-to-correct" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consensus 9: Error handling needs to "provide actionable suggestions" to guide agents to correct
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consensus 9: Error handling needs to &#34;provide actionable suggestions&#34; to guide agents to correct">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-logic_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core logic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#positive-example-actionable-error-prompt-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Positive example: actionable error prompt tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#negative-example-vague-error-prompt-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Negative example: vague error prompt tools
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-core-principles-of-mcp-tool-code-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: Core principles of MCP tool code design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference-documents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reference documents
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+    
+      
+    
+    <a href="https://github.com/Seey215/Seey215/raw/master/docs/tech/mcp/expert-consensus-on-building-mcp.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="expert-consensus-on-building-mcp-with-code-examples">Expert Consensus on Building MCP (with Code Examples)</h1>
+<p>Based on Anthropic's MCP practices and industry consensus, the following are executable code examples for each core consensus (based on Python language, simulating MCP server tool registration logic, core methods refer to <code>MCPBaseServer.register_tool</code> template, adapted for LLM agent calls):</p>
+<h2 id="basic-premise-mcp-server-core-class-definition">Basic premise: MCP server core class definition</h2>
+<p>First define the general MCP server base class, simulating the core capabilities of tool registration, parameter verification, and response processing. All subsequent examples are based on this class extension:</p>
+<pre><code class="language-python">from enum import Enum
+from typing import Dict, List, Optional, Any
+
+# Simulate the MCP protocol response format enumeration (refer to &quot;concise/detailed&quot; design in the web page)
+class ResponseFormat(Enum):
+    CONCISE = &quot;concise&quot;  # Concise mode: only return decision-critical information
+    DETAILED = &quot;detailed&quot;  # Detailed mode: contains technical ID, supports subsequent tool calls
+
+# MCP base server class: provides tool registration and execution entry
+class MCPBaseServer:
+    def __init__(self):
+        self.registered_tools: Dict[str, Dict] = {}  # Store registered tools
+
+    def register_tool(
+        self,
+        tool_id: str,          # Tool unique ID (must conform to namespace rules)
+        tool_name: str,        # Tool name (human/agent understandable)
+        tool_description: str, # Tool description (key: guide agents to call correctly)
+        parameters: List[Dict],# Tool parameter definition (including required/type/example)
+        execute_func: callable # Tool core execution logic (bound business logic)
+    ):
+        &quot;&quot;&quot;MCP tool registration core method: connect tools to MCP protocol for agent calls&quot;&quot;&quot;
+        self.registered_tools[tool_id] = {
+            &quot;tool_name&quot;: tool_name,
+            &quot;tool_description&quot;: tool_description,
+            &quot;parameters&quot;: parameters,
+            &quot;execute&quot;: execute_func
+        }
+
+    def call_tool(self, tool_id: str, params: Dict) -&gt; Dict:
+        &quot;&quot;&quot;MCP tool call entry: parameter verification + execution + return formatted results&quot;&quot;&quot;
+        if tool_id not in self.registered_tools:
+            return {&quot;error&quot;: &quot;Tool not found&quot;, &quot;tool_id&quot;: tool_id}
+
+        tool = self.registered_tools[tool_id]
+        # 1. Parameter verification (based on definition at registration)
+        missing_params = [p[&quot;name&quot;] for p in tool[&quot;parameters&quot;] if p[&quot;required&quot;] and p[&quot;name&quot;] not in params]
+        if missing_params:
+            return {&quot;error&quot;: f&quot;Missing required parameters: {missing_params}&quot;, &quot;suggestion&quot;: f&quot;Please add parameters: {missing_params} (example: {tool['parameters'][0]['example']})&quot;}
+
+        # 2. Execute tool logic
+        try:
+            result = tool[&quot;execute&quot;](**params)
+            return {&quot;success&quot;: True, &quot;data&quot;: result}
+        except Exception as e:
+            return {&quot;error&quot;: str(e), &quot;suggestion&quot;: tool.get(&quot;error_suggestion&quot;, &quot;Please check parameter format or contact developer&quot;)}
+</code></pre>
+<h2 id="consensus-1-tool-design-needs-to-adapt-to-agent-non-deterministic-decision-making-and-refuse-to-replicate-traditional-apis">Consensus 1: Tool design needs to adapt to agent "non-deterministic decision-making" and refuse to replicate traditional APIs</h2>
+<h3 id="core-logic">Core logic</h3>
+<p>Tools need to <strong>integrate multi-step tasks</strong> to avoid agents stringing together multiple single tools (error-prone) and directly support complex decision scenarios.</p>
+<h3 id="positive-example-integrated-tool-solving-customer-duplicate-charges">Positive example: integrated tool (solving customer duplicate charges)</h3>
+<pre><code class="language-python"># Initialize MCP server
+mcp_server = MCPBaseServer()
+
+# 1. Register &quot;solve customer duplicate charge&quot; integrated tool (integrating 3-step logic)
+def resolve_customer_charge_issue(customer_id: str, order_id: Optional[str] = None) -&gt; Dict:
+    &quot;&quot;&quot;Core logic: 1. Check logs → 2. Analyze impact → 3. Generate solution&quot;&quot;&quot;
+    # Step 1: Query duplicate charge logs for this customer
+    logs = [{&quot;log_id&quot;: &quot;log_123&quot;, &quot;time&quot;: &quot;2025-09-10&quot;, &quot;amount&quot;: 99.9, &quot;status&quot;: &quot;duplicate&quot;}]
+    # Step 2: Analyze if other customers are affected
+    affected_customers = [&quot;8765&quot;, &quot;5432&quot;] if &quot;duplicate&quot; in logs[0][&quot;status&quot;] else []
+    # Step 3: Generate solution
+    solution = f&quot;Customer {customer_id} duplicate charge {logs[0]['amount']} yuan, affected customers {affected_customers}, suggest refund first and send apology email&quot;
+    return {
+        &quot;customer_id&quot;: customer_id,
+        &quot;duplicate_logs&quot;: logs,
+        &quot;affected_customers&quot;: affected_customers,
+        &quot;solution&quot;: solution
+    }
+
+# Register tool to MCP
+mcp_server.register_tool(
+    tool_id=&quot;payment.resolve_duplicate_charge&quot;,  # Namespace: service(payment)+function(resolve_duplicate_charge)
+    tool_name=&quot;Resolve customer duplicate charge issue&quot;,
+    tool_description=&quot;Function: One-click query customer duplicate charge logs, analyze affected customers, generate refund solutions;&quot;
+                    &quot;Parameters: customer_id (required, customer ID, example: 9182), order_id (optional, order ID, example: ORD-202509);&quot;
+                    &quot;Scenario: Call when customer reports 'single payment deducted multiple times'&quot;,
+    parameters=[
+        {&quot;name&quot;: &quot;customer_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;9182&quot;},
+        {&quot;name&quot;: &quot;order_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: False, &quot;example&quot;: &quot;ORD-202509&quot;}
+    ],
+    execute_func=resolve_customer_charge_issue
+)
+
+# Agent call example (1 call to complete complex task)
+call_result = mcp_server.call_tool(&quot;payment.resolve_duplicate_charge&quot;, {&quot;customer_id&quot;: &quot;9182&quot;})
+print(call_result[&quot;data&quot;][&quot;solution&quot;])  # Output: Customer 9182 duplicate charge 99.9 yuan...
+</code></pre>
+<h3 id="negative-example-split-tools-agent-needs-to-string-them-together">Negative example: split tools (agent needs to string them together)</h3>
+<pre><code class="language-python"># 1. Register &quot;query charge logs&quot; tool
+def get_payment_logs(customer_id: str) -&gt; List[Dict]:
+    return [{&quot;log_id&quot;: &quot;log_123&quot;, &quot;time&quot;: &quot;2025-09-10&quot;, &quot;amount&quot;: 99.9, &quot;status&quot;: &quot;duplicate&quot;}]
+
+mcp_server.register_tool(
+    tool_id=&quot;payment.get_logs&quot;,
+    tool_name=&quot;Query customer charge logs&quot;,
+    tool_description=&quot;Query customer charge logs&quot;,  # Vague description
+    parameters=[{&quot;name&quot;: &quot;customer_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;9182&quot;}],
+    execute_func=get_payment_logs
+)
+
+# 2. Register &quot;analyze affected customers&quot; tool
+def analyze_impact(log_id: str) -&gt; List[str]:
+    return [&quot;8765&quot;, &quot;5432&quot;]  # Need to call get_payment_logs first to get log_id
+
+mcp_server.register_tool(
+    tool_id=&quot;payment.analyze_impact&quot;,
+    tool_name=&quot;Analyze affected customers&quot;,
+    parameters=[{&quot;name&quot;: &quot;log_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;log_123&quot;}],
+    execute_func=analyze_impact
+)
+
+# 3. Register &quot;generate solution&quot; tool
+def generate_solution(customer_id: str, affected: List[str]) -&gt; str:
+    return f&quot;Customer {customer_id} needs refund, affected customers {affected}&quot;
+
+mcp_server.register_tool(
+    tool_id=&quot;payment.generate_solution&quot;,
+    tool_name=&quot;Generate refund solution&quot;,
+    parameters=[{&quot;name&quot;: &quot;customer_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True}, {&quot;name&quot;: &quot;affected&quot;, &quot;type&quot;: &quot;list&quot;, &quot;required&quot;: True}],
+    execute_func=generate_solution
+)
+
+# Agent needs 3 calls (easy to miss steps/parameter errors)
+log_result = mcp_server.call_tool(&quot;payment.get_logs&quot;, {&quot;customer_id&quot;: &quot;9182&quot;})
+impact_result = mcp_server.call_tool(&quot;payment.analyze_impact&quot;, {&quot;log_id&quot;: log_result[&quot;data&quot;][0][&quot;log_id&quot;]})
+solution_result = mcp_server.call_tool(&quot;payment.generate_solution&quot;, {&quot;customer_id&quot;: &quot;9182&quot;, &quot;affected&quot;: impact_result[&quot;data&quot;]})
+</code></pre>
+<h2 id="consensus-2-tool-functions-need-high-cohesion-and-focus-on-high-value-workflows">Consensus 2: Tool functions need "high cohesion" and focus on high-value workflows</h2>
+<h3 id="core-logic_1">Core logic</h3>
+<p>Tools need to integrate "all process-dependent information for agents to complete a type of task" to avoid agents calling multiple times to splice fragmented data.</p>
+<h3 id="positive-example-highly-cohesive-get-customer-panoramic-information-tool">Positive example: highly cohesive "get customer panoramic information" tool</h3>
+<pre><code class="language-python">def get_customer_context(customer_id: str, response_format: ResponseFormat = ResponseFormat.CONCISE) -&gt; Dict:
+    &quot;&quot;&quot;Integrate customer basic information, recent transactions, service records&quot;&quot;&quot;
+    base_info = {&quot;name&quot;: &quot;Sarah Chen&quot;, &quot;email&quot;: &quot;sarah@acme.com&quot;, &quot;member_level&quot;: &quot;VIP&quot;}
+    recent_trans = [{&quot;order_id&quot;: &quot;ORD-202508&quot;, &quot;amount&quot;: 199.9, &quot;date&quot;: &quot;2025-08-25&quot;}]
+    service_notes = [&quot;2025-08-30: Feedback on delayed logistics, compensation coupon issued&quot;]
+
+    if response_format == ResponseFormat.DETAILED:
+        # Detailed mode: contains user_id and other technical fields, supports subsequent calls (such as sending emails)
+        return {
+            &quot;customer_id&quot;: customer_id,
+            &quot;user_id&quot;: &quot;usr_789&quot;,  # Technical ID
+            &quot;base_info&quot;: base_info,
+            &quot;recent_transactions&quot;: recent_trans,
+            &quot;service_notes&quot;: service_notes
+        }
+    # Concise mode: only return decision-critical information
+    return {
+        &quot;customer_name&quot;: base_info[&quot;name&quot;],
+        &quot;member_level&quot;: base_info[&quot;member_level&quot;],
+        &quot;last_transaction&quot;: recent_trans[0] if recent_trans else None,
+        &quot;latest_service_issue&quot;: service_notes[0] if service_notes else None
+    }
+
+mcp_server.register_tool(
+    tool_id=&quot;customer.get_context&quot;,
+    tool_name=&quot;Get customer panoramic information&quot;,
+    tool_description=&quot;Function: Get customer basic information, recent transactions, service records at once, support concise/detailed two response modes;&quot;
+                    &quot;Parameters: customer_id (required, example: 9182), response_format (optional, default concise, enumeration values: concise/detailed);&quot;
+                    &quot;Scenario: Call when customer cancels request, retention plan formulation&quot;,
+    parameters=[
+        {&quot;name&quot;: &quot;customer_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;9182&quot;},
+        {&quot;name&quot;: &quot;response_format&quot;, &quot;type&quot;: &quot;enum&quot;, &quot;required&quot;: False, &quot;enum_values&quot;: [e.value for e in ResponseFormat], &quot;default&quot;: &quot;concise&quot;}
+    ],
+    execute_func=get_customer_context
+)
+
+# Agent 1 call to get all required information (no need to splice multiple times)
+context = mcp_server.call_tool(&quot;customer.get_context&quot;, {&quot;customer_id&quot;: &quot;9182&quot;, &quot;response_format&quot;: &quot;concise&quot;})
+print(context[&quot;data&quot;][&quot;latest_service_issue&quot;])  # Output: 2025-08-30: Feedback on delayed logistics...
+</code></pre>
+<h3 id="negative-example-split-single-information-tools">Negative example: split "single information" tools</h3>
+<pre><code class="language-python"># 1. Register &quot;get customer basic information&quot; tool
+def get_customer_basic(customer_id: str) -&gt; Dict:
+    return {&quot;name&quot;: &quot;Sarah Chen&quot;, &quot;email&quot;: &quot;sarah@acme.com&quot;}
+
+mcp_server.register_tool(
+    tool_id=&quot;customer.get_basic&quot;,
+    tool_name=&quot;Get customer basic information&quot;,
+    parameters=[{&quot;name&quot;: &quot;customer_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;9182&quot;}],
+    execute_func=get_customer_basic
+)
+
+# 2. Register &quot;get customer transactions&quot; tool
+def list_customer_trans(customer_id: str) -&gt; List[Dict]:
+    return [{&quot;order_id&quot;: &quot;ORD-202508&quot;, &quot;amount&quot;: 199.9, &quot;date&quot;: &quot;2025-08-25&quot;}]
+
+mcp_server.register_tool(
+    tool_id=&quot;customer.list_trans&quot;,
+    tool_name=&quot;Get customer transaction records&quot;,
+    parameters=[{&quot;name&quot;: &quot;customer_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;9182&quot;}],
+    execute_func=list_customer_trans
+)
+
+# 3. Register &quot;get service records&quot; tool
+def get_service_notes(customer_id: str) -&gt; List[str]:
+    return [&quot;2025-08-30: Feedback on delayed logistics, compensation coupon issued&quot;]
+
+mcp_server.register_tool(
+    tool_id=&quot;customer.get_notes&quot;,
+    tool_name=&quot;Get customer service records&quot;,
+    parameters=[{&quot;name&quot;: &quot;customer_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;9182&quot;}],
+    execute_func=get_service_notes
+)
+
+# Agent needs 3 calls (waste tokens and easy to miss certain information)
+basic = mcp_server.call_tool(&quot;customer.get_basic&quot;, {&quot;customer_id&quot;: &quot;9182&quot;})
+trans = mcp_server.call_tool(&quot;customer.list_trans&quot;, {&quot;customer_id&quot;: &quot;9182&quot;})
+notes = mcp_server.call_tool(&quot;customer.get_notes&quot;, {&quot;customer_id&quot;: &quot;9182&quot;})
+</code></pre>
+<h2 id="consensus-3-namespace-needs-to-clearly-distinguish-resourcesservices-to-eliminate-tool-ambiguity">Consensus 3: Namespace needs to "clearly distinguish resources/services" to eliminate tool ambiguity</h2>
+<h3 id="core-logic_2">Core logic</h3>
+<p>Tool ID needs to be named according to "<strong>service domain + resource type + operation</strong>" (such as <code>asana.projects.search</code>) to help agents quickly locate among hundreds of tools.</p>
+<h3 id="positive-example-standard-namespace-tools">Positive example: standard namespace tools</h3>
+<pre><code class="language-python"># 1. Asana service: project-related tools
+def asana_search_projects(project_name: str, page: int = 1, page_size: int = 10) -&gt; List[Dict]:
+    return [{&quot;project_id&quot;: &quot;asana_prj_1&quot;, &quot;name&quot;: &quot;Acme Product Development&quot;, &quot;status&quot;: &quot;In Progress&quot;}]
+
+mcp_server.register_tool(
+    tool_id=&quot;asana.projects.search&quot;,  # Namespace: service(asana)+resource(projects)+operation(search)
+    tool_name=&quot;Search Asana projects&quot;,
+    tool_description=&quot;Function: Search projects in Asana by project name, support pagination;&quot;
+                    &quot;Parameters: project_name (required, example: Acme Product Development), page (optional, default 1), page_size (optional, default 10)&quot;,
+    parameters=[
+        {&quot;name&quot;: &quot;project_name&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;Acme Product Development&quot;},
+        {&quot;name&quot;: &quot;page&quot;, &quot;type&quot;: &quot;int&quot;, &quot;required&quot;: False, &quot;default&quot;: 1},
+        {&quot;name&quot;: &quot;page_size&quot;, &quot;type&quot;: &quot;int&quot;, &quot;required&quot;: False, &quot;default&quot;: 10}
+    ],
+    execute_func=asana_search_projects
+)
+
+# 2. Asana service: user-related tools
+def asana_get_user_tasks(user_id: str) -&gt; List[Dict]:
+    return [{&quot;task_id&quot;: &quot;asana_task_1&quot;, &quot;title&quot;: &quot;Complete requirements document&quot;, &quot;due_date&quot;: &quot;2025-09-15&quot;}]
+
+mcp_server.register_tool(
+    tool_id=&quot;asana.users.get_tasks&quot;,  # Namespace: service(asana)+resource(users)+operation(get_tasks)
+    tool_name=&quot;Get Asana user tasks&quot;,
+    parameters=[{&quot;name&quot;: &quot;user_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;asana_usr_123&quot;}],
+    execute_func=asana_get_user_tasks
+)
+
+# Agent can quickly identify the purpose through tool ID (such as &quot;asana.projects.search&quot; clearly indicates Asana project search)
+prj_result = mcp_server.call_tool(&quot;asana.projects.search&quot;, {&quot;project_name&quot;: &quot;Acme Product Development&quot;})
+</code></pre>
+<h3 id="negative-example-ambiguous-named-tools">Negative example: ambiguous named tools</h3>
+<pre><code class="language-python"># 1. Ambiguous tool ID: no distinction of resource type
+def search_asana(keyword: str) -&gt; List[Dict]:
+    return [{&quot;id&quot;: &quot;asana_1&quot;, &quot;name&quot;: &quot;Acme Product Development&quot;, &quot;type&quot;: &quot;project&quot;}]  # Cannot determine if it's project/task/user
+
+mcp_server.register_tool(
+    tool_id=&quot;asana.search&quot;,  # Only contains service(asana), no resource type
+    tool_name=&quot;Search Asana content&quot;,
+    tool_description=&quot;Search content in Asana&quot;,  # Vague description
+    parameters=[{&quot;name&quot;: &quot;keyword&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;Acme&quot;}],
+    execute_func=search_asana
+)
+
+# 2. Chaotic tool ID: no service domain
+def get_tasks(user_id: str) -&gt; List[Dict]:
+    return [{&quot;task_id&quot;: &quot;task_1&quot;, &quot;title&quot;: &quot;Complete requirements document&quot;}]  # Cannot determine if it's Asana/Jira/other tool's tasks
+
+mcp_server.register_tool(
+    tool_id=&quot;get_tasks&quot;,  # No service domain, no resource type
+    tool_name=&quot;Get tasks&quot;,
+    parameters=[{&quot;name&quot;: &quot;user_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;123&quot;}],
+    execute_func=get_tasks
+)
+
+# Agent is easy to confuse when calling (such as &quot;asana.search&quot; cannot determine if it's searching projects or tasks, &quot;get_tasks&quot; cannot determine which platform's tasks)
+confused_result = mcp_server.call_tool(&quot;asana.search&quot;, {&quot;keyword&quot;: &quot;Acme&quot;})
+</code></pre>
+<h2 id="consensus-4-tool-responses-need-high-signal-low-redundancy-to-reduce-agent-screening-costs">Consensus 4: Tool responses need "high signal, low redundancy" to reduce agent screening costs</h2>
+<h3 id="core-logic_3">Core logic</h3>
+<p>Responses only return information "required for agent's downstream decisions" (such as <code>name</code>/<code>status</code>), eliminating meaningless technical identifiers (such as <code>uuid</code>/<code>mime_type</code>).</p>
+<h3 id="positive-example-high-signal-response-tools">Positive example: high signal response tools</h3>
+<pre><code class="language-python">def get_file_info(file_id: str, response_format: ResponseFormat = ResponseFormat.CONCISE) -&gt; Dict:
+    # Underlying data (contains technical fields, but only returns key information)
+    raw_data = {
+        &quot;file_id&quot;: file_id,
+        &quot;uuid&quot;: &quot;f-uuid-123e4567-e89b-12d3-a456-426614174000&quot;,  # Redundant technical field
+        &quot;name&quot;: &quot;Acme Project Plan.pdf&quot;,
+        &quot;file_type&quot;: &quot;PDF&quot;,
+        &quot;size_mb&quot;: 2.5,
+        &quot;last_edited&quot;: &quot;2025-09-01&quot;,
+        &quot;server_path&quot;: &quot;/data/files/123&quot;,  # Redundant technical field
+        &quot;thumbnail_url_256px&quot;: &quot;https://cdn/acme-256.jpg&quot;  # Redundant technical field
+    }
+
+    if response_format == ResponseFormat.CONCISE:
+        # Only return key information for agent decision-making (such as determining whether to download/share)
+        return {
+            &quot;file_name&quot;: raw_data[&quot;name&quot;],
+            &quot;file_type&quot;: raw_data[&quot;file_type&quot;],
+            &quot;size_mb&quot;: raw_data[&quot;size_mb&quot;],
+            &quot;last_edited&quot;: raw_data[&quot;last_edited&quot;]
+        }
+    # Detailed mode only supplements necessary technical IDs (such as file_id for subsequent download tool calls)
+    return {
+        &quot;file_id&quot;: raw_data[&quot;file_id&quot;],
+        &quot;file_name&quot;: raw_data[&quot;name&quot;],
+        &quot;file_type&quot;: raw_data[&quot;file_type&quot;],
+        &quot;size_mb&quot;: raw_data[&quot;size_mb&quot;],
+        &quot;last_edited&quot;: raw_data[&quot;last_edited&quot;]
+    }
+
+mcp_server.register_tool(
+    tool_id=&quot;file.get_info&quot;,
+    tool_name=&quot;Get file information&quot;,
+    tool_description=&quot;Function: Return key file information such as name, type, size, etc., eliminating redundant technical fields;&quot;
+                    &quot;Parameters: file_id (required, example: file_456), response_format (optional, default concise)&quot;,
+    parameters=[
+        {&quot;name&quot;: &quot;file_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;file_456&quot;},
+        {&quot;name&quot;: &quot;response_format&quot;, &quot;type&quot;: &quot;enum&quot;, &quot;required&quot;: False, &quot;default&quot;: &quot;concise&quot;, &quot;enum_values&quot;: [e.value for e in ResponseFormat]}
+    ],
+    execute_func=get_file_info
+)
+
+# Response example (no redundant fields, agent can use directly)
+file_info = mcp_server.call_tool(&quot;file.get_info&quot;, {&quot;file_id&quot;: &quot;file_456&quot;})
+print(file_info[&quot;data&quot;])
+# Output: {&quot;file_name&quot;: &quot;Acme Project Plan.pdf&quot;, &quot;file_type&quot;: &quot;PDF&quot;, &quot;size_mb&quot;: 2.5, &quot;last_edited&quot;: &quot;2025-09-01&quot;}
+</code></pre>
+<h3 id="negative-example-redundant-response-tools">Negative example: redundant response tools</h3>
+<pre><code class="language-python">def get_file_raw_data(file_id: str) -&gt; Dict:
+    # Return all underlying data, containing a lot of useless fields for agents
+    return {
+        &quot;file_id&quot;: file_id,
+        &quot;uuid&quot;: &quot;f-uuid-123e4567-e89b-12d3-a456-426614174000&quot;,
+        &quot;name&quot;: &quot;Acme Project Plan.pdf&quot;,
+        &quot;mime_type&quot;: &quot;application/pdf&quot;,  # Redundant (agent only needs &quot;PDF&quot;)
+        &quot;size_bytes&quot;: 2621440,  # Redundant (agent needs to manually convert to MB)
+        &quot;server_path&quot;: &quot;/data/files/123&quot;,
+        &quot;thumbnail_url_256px&quot;: &quot;https://cdn/acme-256.jpg&quot;,
+        &quot;thumbnail_url_512px&quot;: &quot;https://cdn/acme-512.jpg&quot;,
+        &quot;upload_server_ip&quot;: &quot;10.0.0.1&quot;  # Completely irrelevant
+    }
+
+mcp_server.register_tool(
+    tool_id=&quot;file.get_raw&quot;,
+    tool_name=&quot;Get file raw data&quot;,
+    parameters=[{&quot;name&quot;: &quot;file_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;file_456&quot;}],
+    execute_func=get_file_raw_data
+)
+
+# Response example (redundant fields account for more than 50%, agent needs to manually filter)
+raw_data = mcp_server.call_tool(&quot;file.get_raw&quot;, {&quot;file_id&quot;: &quot;file_456&quot;})
+print(raw_data[&quot;data&quot;][&quot;mime_type&quot;])  # Agent needs to map to &quot;PDF&quot; by itself
+print(raw_data[&quot;data&quot;][&quot;size_bytes&quot;] / 1024 / 1024)  # Agent needs to manually convert to MB
+</code></pre>
+<h2 id="consensus-5-token-efficiency-needs-active-control-to-avoid-context-overflow">Consensus 5: Token efficiency needs "active control" to avoid context overflow</h2>
+<h3 id="core-logic_4">Core logic</h3>
+<p>Control response scale through <strong>pagination, filtering, truncation</strong>, when exceeding token limits, prompt agents to "narrow query scope" to avoid exhausting agent context windows.</p>
+<h3 id="positive-example-token-efficiency-optimization-tools">Positive example: token efficiency optimization tools</h3>
+<pre><code class="language-python">def search_logs(
+    keyword: str,
+    time_range: str,  # Format: &quot;YYYY-MM-DD to YYYY-MM-DD&quot;
+    page: int = 1,
+    page_size: int = 50,  # Default pagination: avoid returning too much data at once
+    max_tokens: int = 2000  # Maximum token limit (about 500 logs)
+) -&gt; Dict:
+    # Simulate massive logs (1000 entries)
+    all_logs = [{&quot;log_id&quot;: f&quot;log_{i}&quot;, &quot;content&quot;: f&quot;[{time_range}] {keyword} log content{i}&quot;} for i in range(1000)]
+
+    # 1. Pagination calculation
+    start_idx = (page - 1) * page_size
+    end_idx = start_idx + page_size
+    paginated_logs = all_logs[start_idx:end_idx]
+
+    # 2. Token estimation (simplified: about 40 tokens per log)
+    total_tokens = len(paginated_logs) * 40
+    truncated = False
+    if total_tokens &gt; max_tokens:
+        # Truncate and prompt
+        max_logs = max_tokens // 40
+        paginated_logs = paginated_logs[:max_logs]
+        truncated = True
+
+    return {
+        &quot;logs&quot;: paginated_logs,
+        &quot;pagination&quot;: {
+            &quot;current_page&quot;: page,
+            &quot;page_size&quot;: page_size,
+            &quot;total_pages&quot;: (len(all_logs) + page_size - 1) // page_size
+        },
+        &quot;truncated&quot;: truncated,
+        &quot;suggestion&quot;: &quot;If logs are incomplete, you can narrow time_range (example: 2025-09-10 to 2025-09-10) or reduce page_size&quot; if truncated else None
+    }
+
+mcp_server.register_tool(
+    tool_id=&quot;logs.search&quot;,
+    tool_name=&quot;Search system logs&quot;,
+    tool_description=&quot;Function: Search logs by keywords and time range, support pagination and token truncation to avoid context overflow;&quot;
+                    &quot;Parameters: keyword (required, example: payment failed), time_range (required, example: 2025-09-01 to 2025-09-10),&quot;
+                    &quot;page (optional, default 1), page_size (optional, default 50), max_tokens (optional, default 2000)&quot;,
+    parameters=[
+        {&quot;name&quot;: &quot;keyword&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;payment failed&quot;},
+        {&quot;name&quot;: &quot;time_range&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;2025-09-01 to 2025-09-10&quot;},
+        {&quot;name&quot;: &quot;page&quot;, &quot;type&quot;: &quot;int&quot;, &quot;required&quot;: False, &quot;default&quot;: 1},
+        {&quot;name&quot;: &quot;page_size&quot;, &quot;type&quot;: &quot;int&quot;, &quot;required&quot;: False, &quot;default&quot;: 50},
+        {&quot;name&quot;: &quot;max_tokens&quot;, &quot;type&quot;: &quot;int&quot;, &quot;required&quot;: False, &quot;default&quot;: 2000}
+    ],
+    execute_func=search_logs
+)
+
+# Call example: time_range too wide causing token limit exceeded, tool actively truncates and prompts
+logs_result = mcp_server.call_tool(
+    &quot;logs.search&quot;,
+    {&quot;keyword&quot;: &quot;payment failed&quot;, &quot;time_range&quot;: &quot;2025-01-01 to 2025-09-10&quot;, &quot;page_size&quot;: 100}
+)
+print(logs_result[&quot;data&quot;][&quot;truncated&quot;])  # Output: True
+print(logs_result[&quot;data&quot;][&quot;suggestion&quot;])  # Output: If logs are incomplete, you can narrow time_range...
+</code></pre>
+<h3 id="negative-example-no-token-control-tools">Negative example: no token control tools</h3>
+<pre><code class="language-python">def get_all_logs(keyword: str) -&gt; Dict:
+    # No pagination/truncation: return all matching logs (possibly 1000+ entries, exceeding agent context)
+    all_logs = [{&quot;log_id&quot;: f&quot;log_{i}&quot;, &quot;content&quot;: f&quot;Log content{i}: {keyword}&quot;} for i in range(1000)]
+    return {
+        &quot;logs&quot;: all_logs,
+        &quot;count&quot;: len(all_logs)
+    }
+
+mcp_server.register_tool(
+    tool_id=&quot;logs.get_all&quot;,
+    tool_name=&quot;Get all matching logs&quot;,
+    tool_description=&quot;Get all logs containing keywords&quot;,  # No risk scale prompt
+    parameters=[{&quot;name&quot;: &quot;keyword&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;payment failed&quot;}],
+    execute_func=get_all_logs
+)
+
+# Call example: return 1000 logs (about 40000 tokens), directly exceeding Claude Code's default 25000 token limit
+all_logs_result = mcp_server.call_tool(&quot;logs.get_all&quot;, {&quot;keyword&quot;: &quot;payment failed&quot;})
+print(len(all_logs_result[&quot;data&quot;][&quot;logs&quot;]))  # Output: 1000 (agent context overflow, task failed)
+</code></pre>
+<h2 id="consensus-6-tool-descriptions-need-to-be-clear-and-unambiguous-to-reduce-agent-misuse-rate">Consensus 6: Tool descriptions need to be "clear and unambiguous" to reduce agent misuse rate</h2>
+<h3 id="core-logic_5">Core logic</h3>
+<p>Tool descriptions need to clearly specify "<strong>function + parameter meaning + examples + scenarios</strong>", especially parameters need to be marked with type, requiredness, and examples to avoid agents passing wrong values.</p>
+<h3 id="positive-example-clearly-described-tools">Positive example: clearly described tools</h3>
+<pre><code class="language-python">def send_customer_email(
+    customer_id: str,
+    email_type: str,  # Enumeration: refund_confirm/retention_offer
+    template_id: Optional[str] = None
+) -&gt; Dict:
+    &quot;&quot;&quot;Send customer email: automatically match templates based on type (when no template_id)&quot;&quot;&quot;
+    template_map = {
+        &quot;refund_confirm&quot;: &quot;tpl_refund_01&quot;,
+        &quot;retention_offer&quot;: &quot;tpl_retention_01&quot;
+    }
+    used_template = template_id or template_map[email_type]
+    return {
+        &quot;status&quot;: &quot;sent&quot;,
+        &quot;customer_id&quot;: customer_id,
+        &quot;email_type&quot;: email_type,
+        &quot;used_template&quot;: used_template
+    }
+
+mcp_server.register_tool(
+    tool_id=&quot;email.send_customer&quot;,
+    tool_name=&quot;Send customer email&quot;,
+    tool_description=&quot;Function: Send emails to specified customers, support refund confirmation and retention offer types, customizable templates;&quot;
+                    &quot;Parameter description:&quot;
+                    &quot;- customer_id (required, unique customer ID, example: 9182);&quot;
+                    &quot;- email_type (required, email type, only supports: refund_confirm (refund confirmation), retention_offer (retention offer));&quot;
+                    &quot;- template_id (optional, template ID, example: tpl_custom_01, use default template if not filled);&quot;
+                    &quot;Call scenario: Send confirmation email after customer refund, send retention offer when customer cancels;&quot;
+                    &quot;Error prompt: If email_type is not in enumeration, need to re-pass refund_confirm or retention_offer&quot;,
+    parameters=[
+        {&quot;name&quot;: &quot;customer_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;9182&quot;},
+        {&quot;name&quot;: &quot;email_type&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;retention_offer&quot;, &quot;enum_values&quot;: [&quot;refund_confirm&quot;, &quot;retention_offer&quot;]},
+        {&quot;name&quot;: &quot;template_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: False, &quot;example&quot;: &quot;tpl_custom_01&quot;}
+    ],
+    execute_func=send_customer_email,
+    error_suggestion=&quot;Please check if email_type is 'refund_confirm' or 'retention_offer', or add template_id&quot;
+)
+
+# Agent can call correctly according to description (unambiguous)
+email_result = mcp_server.call_tool(
+    &quot;email.send_customer&quot;,
+    {&quot;customer_id&quot;: &quot;9182&quot;, &quot;email_type&quot;: &quot;retention_offer&quot;}
+)
+print(email_result[&quot;data&quot;][&quot;status&quot;])  # Output: sent
+</code></pre>
+<h3 id="negative-example-vague-description-tools">Negative example: vague description tools</h3>
+<pre><code class="language-python">def send_email(customer_id: str, type: str, template: Optional[str] = None) -&gt; Dict:
+    &quot;&quot;&quot;Send email&quot;&quot;&quot;  # Vague description
+    if type not in [&quot;refund&quot;, &quot;retention&quot;]:
+        raise ValueError(&quot;Type error&quot;)
+    return {&quot;status&quot;: &quot;sent&quot;}
+
+mcp_server.register_tool(
+    tool_id=&quot;email.send&quot;,
+    tool_name=&quot;Send email&quot;,
+    tool_description=&quot;Send email to customer, parameters include type and template&quot;,  # No parameter meaning/examples
+    parameters=[
+        {&quot;name&quot;: &quot;customer_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True},  # No example
+        {&quot;name&quot;: &quot;type&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True},  # No enumeration value description
+        {&quot;name&quot;: &quot;template&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: False}  # No example
+    ],
+    execute_func=send_email
+)
+
+# Agent is easy to misuse (ambiguous parameters)
+# Error 1: type passed &quot;retention&quot; (actually needs &quot;retention&quot;)
+error1 = mcp_server.call_tool(&quot;email.send&quot;, {&quot;customer_id&quot;: &quot;9182&quot;, &quot;type&quot;: &quot;retention&quot;})
+print(error1[&quot;error&quot;])  # Output: Type error (no correction suggestion)
+
+# Error 2: don't know template parameter format (pass &quot;retention template&quot; instead of ID)
+error2 = mcp_server.call_tool(&quot;email.send&quot;, {&quot;customer_id&quot;: &quot;9182&quot;, &quot;type&quot;: &quot;retention&quot;, &quot;template&quot;: &quot;retention template&quot;})
+</code></pre>
+<h2 id="consensus-9-error-handling-needs-to-provide-actionable-suggestions-to-guide-agents-to-correct">Consensus 9: Error handling needs to "provide actionable suggestions" to guide agents to correct</h2>
+<h3 id="core-logic_6">Core logic</h3>
+<p>Error responses need to clearly specify "<strong>error reason + specific correction steps</strong>" rather than just returning error codes or vague prompts to help agents quickly adjust call parameters.</p>
+<h3 id="positive-example-actionable-error-prompt-tools">Positive example: actionable error prompt tools</h3>
+<pre><code class="language-python">def create_meeting(
+    attendee_emails: List[str],
+    start_time: str,  # Format: &quot;YYYY-MM-DD HH:MM&quot; (24-hour format)
+    duration_min: int  # Range: 15-180
+) -&gt; Dict:
+    # Parameter verification: clear error reason
+    if not all(&quot;@&quot; in email for email in attendee_emails):
+        raise ValueError(&quot;Some attendee email formats are invalid&quot;)
+    if len(start_time.split(&quot; &quot;)) != 2 or len(start_time.split(&quot;:&quot;)[1]) != 2:
+        raise ValueError(&quot;Start time format error&quot;)
+    if duration_min &lt; 15 or duration_min &gt; 180:
+        raise ValueError(&quot;Meeting duration must be between 15-180 minutes&quot;)
+
+    return {&quot;meeting_id&quot;: &quot;meet_789&quot;, &quot;status&quot;: &quot;created&quot;, &quot;start_time&quot;: start_time}
+
+mcp_server.register_tool(
+    tool_id=&quot;calendar.create_meeting&quot;,
+    tool_name=&quot;Create meeting&quot;,
+    tool_description=&quot;Function: Create calendar meeting, specify attendees, time, duration;&quot;
+                    &quot;Parameters: attendee_emails (required, email list, example: ['jane@acme.com']),&quot;
+                    &quot;start_time (required, format: YYYY-MM-DD HH:MM, example: 2025-09-15 14:30),&quot;
+                    &quot;duration_min (required, 15-180 minutes, example: 60)&quot;,
+    parameters=[
+        {&quot;name&quot;: &quot;attendee_emails&quot;, &quot;type&quot;: &quot;list&quot;, &quot;required&quot;: True, &quot;example&quot;: [&quot;jane@acme.com&quot;, &quot;john@acme.com&quot;]},
+        {&quot;name&quot;: &quot;start_time&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;2025-09-15 14:30&quot;},
+        {&quot;name&quot;: &quot;duration_min&quot;, &quot;type&quot;: &quot;int&quot;, &quot;required&quot;: True, &quot;example&quot;: 60}
+    ],
+    execute_func=create_meeting,
+    error_suggestion=lambda e: {
+        &quot;邮箱错误&quot;: &quot;Please check if attendee emails contain '@' (example: ['jane@acme.com'])&quot;,
+        &quot;时间格式错误&quot;: &quot;Please pass in the format 'YYYY-MM-DD HH:MM' (example: 2025-09-15 14:30)&quot;,
+        &quot;时长错误&quot;: &quot;Meeting duration needs to be set to 15-180 minutes (example: 30/60)&quot;
+    }.get(str(e).split(&quot;：&quot;)[0], &quot;Please check if parameter format conforms to example&quot;)
+)
+
+# Error call example: time format error, return actionable suggestion
+error_result = mcp_server.call_tool(
+    &quot;calendar.create_meeting&quot;,
+    {&quot;attendee_emails&quot;: [&quot;jane@acme.com&quot;], &quot;start_time&quot;: &quot;2025-09-15 2点半&quot;, &quot;duration_min&quot;: 60}
+)
+print(error_result[&quot;error&quot;])  # Output: Start time format error
+print(error_result[&quot;suggestion&quot;])  # Output: Please pass in the format 'YYYY-MM-DD HH:MM' (example: 2025-09-15 14:30)
+</code></pre>
+<h3 id="negative-example-vague-error-prompt-tools">Negative example: vague error prompt tools</h3>
+<pre><code class="language-python">def create_meeting_v2(attendees: List[str], time: str, duration: int) -&gt; Dict:
+    if not all(&quot;@&quot; in a for a in attendees):
+        raise ValueError(&quot;E001&quot;)  # Error code with no meaning
+    if len(time.split(&quot; &quot;)) != 2:
+        raise ValueError(&quot;E002&quot;)
+    if duration &lt; 15 or duration &gt; 180:
+        raise ValueError(&quot;E003&quot;)
+    return {&quot;meeting_id&quot;: &quot;meet_789&quot;}
+
+mcp_server.register_tool(
+    tool_id=&quot;calendar.create_meeting_v2&quot;,
+    tool_name=&quot;Create meeting V2&quot;,
+    parameters=[
+        {&quot;name&quot;: &quot;attendees&quot;, &quot;type&quot;: &quot;list&quot;, &quot;required&quot;: True},
+        {&quot;name&quot;: &quot;time&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True},
+        {&quot;name&quot;: &quot;duration&quot;, &quot;type&quot;: &quot;int&quot;, &quot;required&quot;: True}
+    ],
+    execute_func=create_meeting_v2
+)
+
+# Error call example: only return error code, agent cannot correct
+error_result_v2 = mcp_server.call_tool(
+    &quot;calendar.create_meeting_v2&quot;,
+    {&quot;attendees&quot;: [&quot;jane.acme.com&quot;], &quot;time&quot;: &quot;2025-09-15&quot;, &quot;duration&quot;: 200}
+)
+print(error_result_v2[&quot;error&quot;])  # Output: E001 (agent cannot understand meaning)
+print(error_result_v2.get(&quot;suggestion&quot;))  # Output: None (no correction suggestion)
+</code></pre>
+<h2 id="summary-core-principles-of-mcp-tool-code-design">Summary: Core principles of MCP tool code design</h2>
+<ol>
+<li>
+<p><strong>Naming conventions</strong>: Tool ID named according to "service + resource + operation" (such as <code>payment.resolve_duplicate_charge</code>);</p>
+</li>
+<li>
+<p><strong>Clear description</strong>: Clearly specify "function + parameter meaning + examples + scenarios" to avoid ambiguity;</p>
+</li>
+<li>
+<p><strong>Concise response</strong>: Only return key information for agent decision-making, eliminating redundant technical fields;</p>
+</li>
+<li>
+<p><strong>Efficiency control</strong>: Limit token consumption through pagination and truncation, prompt to narrow query scope when exceeding limits;</p>
+</li>
+<li>
+<p><strong>Error friendly</strong>: Error responses need to contain "reason + actionable suggestions" rather than error codes;</p>
+</li>
+<li>
+<p><strong>High cohesion</strong>: Integrate multi-step logic to avoid agents calling multiple times to splice data.</p>
+</li>
+</ol>
+<p>The above code examples are all based on Anthropic's MCP practice logic and can be directly adapted to LLM agents such as Claude to reduce call error rates and improve task completion efficiency.</p>
+<h2 id="reference-documents">Reference documents</h2>
+<ul>
+<li>
+<p><a href="https://www.anthropic.com/engineering/writing-tools-for-agents">Writing effective tools for AI agents—using AI agents \ Anthropic</a></p>
+</li>
+<li>
+<p><a href="https://www.doubao.com/thread/w1590f5b1360ca747">豆包对话</a></p>
+</li>
+</ul>
+<blockquote>
+<p>(Note: Some content in the document may be AI-generated)</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../algorithm/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 算法">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                算法
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../expert-consensus-on-building-mcp.zh-CN/" class="md-footer__link md-footer__link--next" aria-label="Next: 构建MCP的专家共识">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                构建MCP的专家共识
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright&copy;2024-2025 Seey — <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">赣ICP备2024035936号-1</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Seey215" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://v.douyin.com/iyv4JuAx/" target="_blank" rel="noopener" title="v.douyin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M448.5 209.9c-44 .1-87-13.6-122.8-39.2v178.7c0 33.1-10.1 65.4-29 92.6s-45.6 48-76.6 59.6-64.8 13.5-96.9 5.3-60.9-25.9-82.7-50.8-35.3-56-39-88.9 2.9-66.1 18.6-95.2 40-52.7 69.6-67.7 62.9-20.5 95.7-16v89.9c-15-4.7-31.1-4.6-46 .4s-27.9 14.6-37 27.3-14 28.1-13.9 43.9 5.2 31 14.5 43.7 22.4 22.1 37.4 26.9 31.1 4.8 46-.1 28-14.4 37.2-27.1 14.2-28.1 14.2-43.8V0h88c-.1 7.4.6 14.9 1.9 22.2 3.1 16.3 9.4 31.9 18.7 45.7s21.3 25.6 35.2 34.6c19.9 13.1 43.2 20.1 67 20.1V210z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.path", "navigation.prune", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+  
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  <script src="../../../assets/javascripts/custom.058c863c.min.js"></script>
+
+  </body>
+</html>

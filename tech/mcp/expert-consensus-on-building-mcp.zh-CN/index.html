@@ -1,0 +1,2614 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Welcome to my personal website!  <br> Here I record my learning notes, personal experiences, and achievements, even secrets. <br><br> Click "Latest Version" to access the latest version of the website, which is powered by GitHub Action, should you need it.">
+      
+      
+        <meta name="author" content="Seey">
+      
+      
+        <link rel="canonical" href="https://seey215.github.io/Seey215/tech/mcp/expert-consensus-on-building-mcp.zh-CN/">
+      
+      
+        <link rel="prev" href="../expert-consensus-on-building-mcp/">
+      
+      
+        <link rel="next" href="../../../essay/">
+      
+      
+      <link rel="icon" href="../../../assets/SeeyLogo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>构建MCP的专家共识 - Seey</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config",""),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  <link rel="stylesheet" href="../../../assets/stylesheets/custom.7c86dd97.min.css">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#mcp" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Don't show this again">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+              </button>
+            
+            
+  First met <strong>@seey</strong> on
+  <a rel="me" href="https://v.douyin.com/iyv4JuAx/" target="_blank">
+    <span class="twemoji mastodon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M448.5 209.9c-44 .1-87-13.6-122.8-39.2v178.7c0 33.1-10.1 65.4-29 92.6s-45.6 48-76.6 59.6-64.8 13.5-96.9 5.3-60.9-25.9-82.7-50.8-35.3-56-39-88.9 2.9-66.1 18.6-95.2 40-52.7 69.6-67.7 62.9-20.5 95.7-16v89.9c-15-4.7-31.1-4.6-46 .4s-27.9 14.6-37 27.3-14 28.1-13.9 43.9 5.2 31 14.5 43.7 22.4 22.1 37.4 26.9 31.1 4.8 46-.1 28-14.4 37.2-27.1 14.2-28.1 14.2-43.8V0h88c-.1 7.4.6 14.9 1.9 22.2 3.1 16.3 9.4 31.9 18.7 45.7s21.3 25.6 35.2 34.6c19.9 13.1 43.2 20.1 67 20.1V210z"/></svg>
+    </span>
+    <strong>抖音</strong>
+  </a>
+  or
+  <a href="https://space.bilibili.com/1614772359" target="_blank">
+    <span class="twemoji mastodon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M488.6 104.1c16.7 18.1 24.4 39.7 23.3 65.7v202.4c-.4 26.4-9.2 48.1-26.5 65.1-17.2 17-39.1 25.9-65.5 26.7H92c-26.4-.8-48.2-9.8-65.3-27.2S.7 396.5 0 368.2V169.8c.8-26 9.7-47.6 26.7-65.7C43.8 87.8 65.5 78.8 92 78h29.4L96 52.2c-5.7-5.7-8.6-13-8.6-21.8S90.3 14.3 96 8.6 109 0 117.9 0s16.1 2.9 21.9 8.6L213.1 78h88l74.5-69.4C381.7 2.9 389.2 0 398 0s16.1 2.9 21.9 8.6c5.7 5.7 8.6 13 8.6 21.8s-2.9 16.1-8.6 21.8L394.6 78h29.3c26.4.8 48 9.8 64.7 26.1m-38.8 69.7c-.4-9.6-3.7-17.4-10.7-23.5-5.2-6.1-14-9.4-22.7-9.8H96c-9.6.4-17.4 3.7-23.6 9.8-6.1 6.1-9.4 13.9-9.8 23.5v194.4c0 9.2 3.3 17 9.8 23.5s14.4 9.8 23.6 9.8h320.4c9.2 0 17-3.3 23.3-9.8s9.7-14.3 10.1-23.5zm-264.3 42.7c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2-6.2 6.3-14 9.5-23.6 9.5s-17.5-3.2-23.6-9.5-9.4-14-9.8-23.2v-33.3c.4-9.1 3.8-16.9 10.1-23.2s13.2-9.6 23.3-10c9.2.4 17 3.7 23.3 10m191.5 0c6.3 6.3 9.7 14.1 10.1 23.2V273c-.4 9.2-3.7 16.9-9.8 23.2s-14 9.5-23.6 9.5-17.4-3.2-23.6-9.5c-7-6.3-9.4-14-9.7-23.2v-33.3c.3-9.1 3.7-16.9 10-23.2s14.1-9.6 23.3-10c9.2.4 17 3.7 23.3 10"/></svg>
+    </span>
+    <strong>B站</strong>
+  </a>
+
+
+          </div>
+          
+            <script>var el=document.querySelector("[data-md-component=announce]");if(el){var content=el.querySelector(".md-typeset");__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0)}</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Seey" class="md-header__button md-logo" aria-label="Seey" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Seey
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              构建MCP的专家共识
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to Dark Mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to Dark Mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to Light Mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to Light Mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Seey215/Seey215" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Seey215/Seey215
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../redis/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Tech
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../essay/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Essay
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../about/resume/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Recruit
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../project/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Project
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../about/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  About
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Seey" class="md-nav__button md-logo" aria-label="Seey" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    Seey
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Seey215/Seey215" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Seey215/Seey215
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Tech
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tech
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../redis/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Redis
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    
+  
+  
+  
+    <a href="../../database/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    DataBase
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../algorithm/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Algorithm
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    MCP
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            MCP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../expert-consensus-on-building-mcp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Expert Consensus on Building MCP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    构建MCP的专家共识
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    构建MCP的专家共识
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mcp_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础前提：MCP 服务器核心类定义
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      共识 1：工具设计需适配智能体 "非确定性决策"，拒绝复刻传统 API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="共识 1：工具设计需适配智能体 &#34;非确定性决策&#34;，拒绝复刻传统 API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心逻辑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      正例：整合式工具（解决客户重复收费问题）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      反例：拆分式工具（需智能体自行串联）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      共识 2：工具功能需 "高内聚"，聚焦高价值 workflows
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="共识 2：工具功能需 &#34;高内聚&#34;，聚焦高价值 workflows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心逻辑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      正例：高内聚的 "获取客户全景信息" 工具
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      反例：拆分的 "单一信息" 工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      共识 3：命名空间需 "清晰区分资源 / 服务"，消除工具歧义
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="共识 3：命名空间需 &#34;清晰区分资源 / 服务&#34;，消除工具歧义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心逻辑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      正例：规范命名空间的工具
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      反例：模糊命名的工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      共识 4：工具响应需 "高信号、低冗余"，减少智能体筛选成本
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="共识 4：工具响应需 &#34;高信号、低冗余&#34;，减少智能体筛选成本">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心逻辑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      正例：高信号响应工具
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      反例：冗余响应工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5token" class="md-nav__link">
+    <span class="md-ellipsis">
+      共识 5：token 效率需 "主动控制"，避免上下文溢出
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="共识 5：token 效率需 &#34;主动控制&#34;，避免上下文溢出">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心逻辑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#token" class="md-nav__link">
+    <span class="md-ellipsis">
+      正例：token 效率优化工具
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#token_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      反例：无 token 控制工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      共识 6：工具描述需 "清晰无歧义"，降低智能体误用率
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="共识 6：工具描述需 &#34;清晰无歧义&#34;，降低智能体误用率">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心逻辑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      正例：清晰描述的工具
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      反例：模糊描述的工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      共识 9：错误处理需 "提供可行动建议"，引导智能体修正
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="共识 9：错误处理需 &#34;提供可行动建议&#34;，引导智能体修正">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心逻辑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      正例：可行动错误提示工具
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      反例：模糊错误提示工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mcp_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      总结：MCP 工具代码设计的核心准则
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      参考文档
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../essay/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Essay
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../blog/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../about/resume/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Recruit
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../project/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Project
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../about/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mcp_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础前提：MCP 服务器核心类定义
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      共识 1：工具设计需适配智能体 "非确定性决策"，拒绝复刻传统 API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="共识 1：工具设计需适配智能体 &#34;非确定性决策&#34;，拒绝复刻传统 API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心逻辑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      正例：整合式工具（解决客户重复收费问题）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      反例：拆分式工具（需智能体自行串联）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      共识 2：工具功能需 "高内聚"，聚焦高价值 workflows
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="共识 2：工具功能需 &#34;高内聚&#34;，聚焦高价值 workflows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心逻辑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      正例：高内聚的 "获取客户全景信息" 工具
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      反例：拆分的 "单一信息" 工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      共识 3：命名空间需 "清晰区分资源 / 服务"，消除工具歧义
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="共识 3：命名空间需 &#34;清晰区分资源 / 服务&#34;，消除工具歧义">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心逻辑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      正例：规范命名空间的工具
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      反例：模糊命名的工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      共识 4：工具响应需 "高信号、低冗余"，减少智能体筛选成本
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="共识 4：工具响应需 &#34;高信号、低冗余&#34;，减少智能体筛选成本">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心逻辑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      正例：高信号响应工具
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      反例：冗余响应工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5token" class="md-nav__link">
+    <span class="md-ellipsis">
+      共识 5：token 效率需 "主动控制"，避免上下文溢出
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="共识 5：token 效率需 &#34;主动控制&#34;，避免上下文溢出">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心逻辑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#token" class="md-nav__link">
+    <span class="md-ellipsis">
+      正例：token 效率优化工具
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#token_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      反例：无 token 控制工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      共识 6：工具描述需 "清晰无歧义"，降低智能体误用率
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="共识 6：工具描述需 &#34;清晰无歧义&#34;，降低智能体误用率">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心逻辑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      正例：清晰描述的工具
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      反例：模糊描述的工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      共识 9：错误处理需 "提供可行动建议"，引导智能体修正
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="共识 9：错误处理需 &#34;提供可行动建议&#34;，引导智能体修正">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心逻辑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      正例：可行动错误提示工具
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      反例：模糊错误提示工具
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mcp_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      总结：MCP 工具代码设计的核心准则
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      参考文档
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+    
+      
+    
+    <a href="https://github.com/Seey215/Seey215/raw/master/docs/tech/mcp/expert-consensus-on-building-mcp.zh-CN.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="mcp">构建 MCP 的专家共识（含代码示例）</h1>
+<p>基于 Anthropic 的 MCP 实践与业内共识，以下为每项核心共识补充可落地的代码示例（以 Python 语言为基础，模拟 MCP 服务器工具注册逻辑，核心方法参考 <code>MCPBaseServer.register_tool</code> 模板，适配 LLM 智能体调用场景）。</p>
+<h2 id="mcp_1">基础前提：MCP 服务器核心类定义</h2>
+<p>先定义通用 MCP 服务器基类，模拟工具注册、参数校验、响应处理的核心能力，后续所有示例均基于此类扩展：</p>
+<pre><code class="language-python">from enum import Enum
+from typing import Dict, List, Optional, Any
+
+# 模拟MCP协议的响应格式枚举（参考网页中&quot;concise/detailed&quot;设计）
+class ResponseFormat(Enum):
+    CONCISE = &quot;concise&quot;  # 简洁模式：仅返回决策关键信息
+    DETAILED = &quot;detailed&quot;  # 详细模式：含技术ID，支持后续工具调用
+
+# MCP基础服务器类：提供工具注册、执行入口
+class MCPBaseServer:
+    def __init__(self):
+        self.registered_tools: Dict[str, Dict] = {}  # 存储已注册工具
+
+    def register_tool(
+        self,
+        tool_id: str,          # 工具唯一ID（需符合命名空间规则）
+        tool_name: str,        # 工具名称（人类/智能体可理解）
+        tool_description: str, # 工具描述（关键：指导智能体正确调用）
+        parameters: List[Dict],# 工具参数定义（含必填/类型/示例）
+        execute_func: callable # 工具核心执行逻辑（绑定业务逻辑）
+    ):
+        &quot;&quot;&quot;MCP工具注册核心方法：将工具接入MCP协议，供智能体调用&quot;&quot;&quot;
+        self.registered_tools[tool_id] = {
+            &quot;tool_name&quot;: tool_name,
+            &quot;tool_description&quot;: tool_description,
+            &quot;parameters&quot;: parameters,
+            &quot;execute&quot;: execute_func
+        }
+
+    def call_tool(self, tool_id: str, params: Dict) -&gt; Dict:
+        &quot;&quot;&quot;MCP工具调用入口：校验参数+执行+返回格式化结果&quot;&quot;&quot;
+        if tool_id not in self.registered_tools:
+            return {&quot;error&quot;: &quot;Tool not found&quot;, &quot;tool_id&quot;: tool_id}
+
+        tool = self.registered_tools[tool_id]
+        # 1. 参数校验（基于注册时的定义）
+        missing_params = [p[&quot;name&quot;] for p in tool[&quot;parameters&quot;] if p[&quot;required&quot;] and p[&quot;name&quot;] not in params]
+        if missing_params:
+            return {&quot;error&quot;: f&quot;Missing required parameters: {missing_params}&quot;, &quot;suggestion&quot;: f&quot;请补充参数：{missing_params}（示例：{tool['parameters'][0]['example']}）&quot;}
+
+        # 2. 执行工具逻辑
+        try:
+            result = tool[&quot;execute&quot;](**params)
+            return {&quot;success&quot;: True, &quot;data&quot;: result}
+        except Exception as e:
+            return {&quot;error&quot;: str(e), &quot;suggestion&quot;: tool.get(&quot;error_suggestion&quot;, &quot;请检查参数格式或联系开发者&quot;)}
+</code></pre>
+<h2 id="1-api">共识 1：工具设计需适配智能体 "非确定性决策"，拒绝复刻传统 API</h2>
+<h3 id="_1">核心逻辑</h3>
+<p>工具需<strong>整合多步骤任务</strong>，避免智能体自行串联多个单一工具（易出错），直接支持复杂决策场景。</p>
+<h3 id="_2">正例：整合式工具（解决客户重复收费问题）</h3>
+<pre><code class="language-python"># 初始化MCP服务器
+mcp_server = MCPBaseServer()
+
+# 1. 注册&quot;解决客户重复收费&quot;整合工具（整合3步逻辑）
+def resolve_customer_charge_issue(customer_id: str, order_id: Optional[str] = None) -&gt; Dict:
+    &quot;&quot;&quot;核心逻辑：1.查日志→2.分析影响→3.生成方案&quot;&quot;&quot;
+    # 步骤1：查询该客户重复收费日志
+    logs = [{&quot;log_id&quot;: &quot;log_123&quot;, &quot;time&quot;: &quot;2025-09-10&quot;, &quot;amount&quot;: 99.9, &quot;status&quot;: &quot;duplicate&quot;}]
+    # 步骤2：分析是否有其他客户受影响
+    affected_customers = [&quot;8765&quot;, &quot;5432&quot;] if &quot;duplicate&quot; in logs[0][&quot;status&quot;] else []
+    # 步骤3：生成解决方案
+    solution = f&quot;客户{customer_id}重复收费{logs[0]['amount']}元，受影响客户{affected_customers}，建议优先退款并发送致歉邮件&quot;
+    return {
+        &quot;customer_id&quot;: customer_id,
+        &quot;duplicate_logs&quot;: logs,
+        &quot;affected_customers&quot;: affected_customers,
+        &quot;solution&quot;: solution
+    }
+
+# 注册工具到MCP
+mcp_server.register_tool(
+    tool_id=&quot;payment.resolve_duplicate_charge&quot;,  # 命名空间：服务(payment)+功能(resolve_duplicate_charge)
+    tool_name=&quot;解决客户重复收费问题&quot;,
+    tool_description=&quot;功能：一键查询客户重复收费日志、分析受影响客户、生成退款方案；&quot;
+                    &quot;参数：customer_id（必填，客户ID，例：9182）、order_id（可选，订单ID，例：ORD-202509）；&quot;
+                    &quot;场景：客户反馈&quot;单次支付被扣款多次&quot;时调用&quot;,
+    parameters=[
+        {&quot;name&quot;: &quot;customer_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;9182&quot;},
+        {&quot;name&quot;: &quot;order_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: False, &quot;example&quot;: &quot;ORD-202509&quot;}
+    ],
+    execute_func=resolve_customer_charge_issue
+)
+
+# 智能体调用示例（1次调用完成复杂任务）
+call_result = mcp_server.call_tool(&quot;payment.resolve_duplicate_charge&quot;, {&quot;customer_id&quot;: &quot;9182&quot;})
+print(call_result[&quot;data&quot;][&quot;solution&quot;])  # 输出：客户9182重复收费99.9元...
+</code></pre>
+<h3 id="_3">反例：拆分式工具（需智能体自行串联）</h3>
+<pre><code class="language-python"># 1. 注册&quot;查询收费日志&quot;工具
+def get_payment_logs(customer_id: str) -&gt; List[Dict]:
+    return [{&quot;log_id&quot;: &quot;log_123&quot;, &quot;time&quot;: &quot;2025-09-10&quot;, &quot;amount&quot;: 99.9, &quot;status&quot;: &quot;duplicate&quot;}]
+
+mcp_server.register_tool(
+    tool_id=&quot;payment.get_logs&quot;,
+    tool_name=&quot;查询客户收费日志&quot;,
+    tool_description=&quot;查询客户收费日志&quot;,  # 描述模糊
+    parameters=[{&quot;name&quot;: &quot;customer_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;9182&quot;}],
+    execute_func=get_payment_logs
+)
+
+# 2. 注册&quot;分析受影响客户&quot;工具
+def analyze_impact(log_id: str) -&gt; List[str]:
+    return [&quot;8765&quot;, &quot;5432&quot;]  # 需先调用get_payment_logs获取log_id
+
+mcp_server.register_tool(
+    tool_id=&quot;payment.analyze_impact&quot;,
+    tool_name=&quot;分析受影响客户&quot;,
+    parameters=[{&quot;name&quot;: &quot;log_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;log_123&quot;}],
+    execute_func=analyze_impact
+)
+
+# 3. 注册&quot;生成方案&quot;工具
+def generate_solution(customer_id: str, affected: List[str]) -&gt; str:
+    return f&quot;客户{customer_id}需退款，受影响客户{affected}&quot;
+
+mcp_server.register_tool(
+    tool_id=&quot;payment.generate_solution&quot;,
+    tool_name=&quot;生成退款方案&quot;,
+    parameters=[{&quot;name&quot;: &quot;customer_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True}, {&quot;name&quot;: &quot;affected&quot;, &quot;type&quot;: &quot;list&quot;, &quot;required&quot;: True}],
+    execute_func=generate_solution
+)
+
+# 智能体需3次调用（易遗漏步骤/参数错误）
+log_result = mcp_server.call_tool(&quot;payment.get_logs&quot;, {&quot;customer_id&quot;: &quot;9182&quot;})
+impact_result = mcp_server.call_tool(&quot;payment.analyze_impact&quot;, {&quot;log_id&quot;: log_result[&quot;data&quot;][0][&quot;log_id&quot;]})
+solution_result = mcp_server.call_tool(&quot;payment.generate_solution&quot;, {&quot;customer_id&quot;: &quot;9182&quot;, &quot;affected&quot;: impact_result[&quot;data&quot;]})
+</code></pre>
+<h2 id="2-workflows">共识 2：工具功能需 "高内聚"，聚焦高价值 workflows</h2>
+<h3 id="_4">核心逻辑</h3>
+<p>工具需整合 "智能体完成某类任务的全流程依赖信息"，避免智能体多次调用拼接碎片数据。</p>
+<h3 id="_5">正例：高内聚的 "获取客户全景信息" 工具</h3>
+<pre><code class="language-python">def get_customer_context(customer_id: str, response_format: ResponseFormat = ResponseFormat.CONCISE) -&gt; Dict:
+    &quot;&quot;&quot;整合客户基本信息、近期交易、服务记录&quot;&quot;&quot;
+    base_info = {&quot;name&quot;: &quot;Sarah Chen&quot;, &quot;email&quot;: &quot;sarah@acme.com&quot;, &quot;member_level&quot;: &quot;VIP&quot;}
+    recent_trans = [{&quot;order_id&quot;: &quot;ORD-202508&quot;, &quot;amount&quot;: 199.9, &quot;date&quot;: &quot;2025-08-25&quot;}]
+    service_notes = [&quot;2025-08-30：反馈物流延迟，已补偿优惠券&quot;]
+
+    if response_format == ResponseFormat.DETAILED:
+        # 详细模式：含user_id等技术字段，支持后续调用（如发送邮件）
+        return {
+            &quot;customer_id&quot;: customer_id,
+            &quot;user_id&quot;: &quot;usr_789&quot;,  # 技术ID
+            &quot;base_info&quot;: base_info,
+            &quot;recent_transactions&quot;: recent_trans,
+            &quot;service_notes&quot;: service_notes
+        }
+    # 简洁模式：仅返回决策关键信息
+    return {
+        &quot;customer_name&quot;: base_info[&quot;name&quot;],
+        &quot;member_level&quot;: base_info[&quot;member_level&quot;],
+        &quot;last_transaction&quot;: recent_trans[0] if recent_trans else None,
+        &quot;latest_service_issue&quot;: service_notes[0] if service_notes else None
+    }
+
+mcp_server.register_tool(
+    tool_id=&quot;customer.get_context&quot;,
+    tool_name=&quot;获取客户全景信息&quot;,
+    tool_description=&quot;功能：一次性获取客户基本信息、近期交易、服务记录，支持简洁/详细两种响应模式；&quot;
+                    &quot;参数：customer_id（必填，例：9182）、response_format（可选，默认concise，枚举值：concise/detailed）；&quot;
+                    &quot;场景：客户取消请求、挽留方案制定时调用&quot;,
+    parameters=[
+        {&quot;name&quot;: &quot;customer_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;9182&quot;},
+        {&quot;name&quot;: &quot;response_format&quot;, &quot;type&quot;: &quot;enum&quot;, &quot;required&quot;: False, &quot;enum_values&quot;: [e.value for e in ResponseFormat], &quot;default&quot;: &quot;concise&quot;}
+    ],
+    execute_func=get_customer_context
+)
+
+# 智能体1次调用获取所有所需信息（无需多次拼接）
+context = mcp_server.call_tool(&quot;customer.get_context&quot;, {&quot;customer_id&quot;: &quot;9182&quot;, &quot;response_format&quot;: &quot;concise&quot;})
+print(context[&quot;data&quot;][&quot;latest_service_issue&quot;])  # 输出：2025-08-30：反馈物流延迟...
+</code></pre>
+<h3 id="_6">反例：拆分的 "单一信息" 工具</h3>
+<pre><code class="language-python"># 1. 注册&quot;获取客户基本信息&quot;工具
+def get_customer_basic(customer_id: str) -&gt; Dict:
+    return {&quot;name&quot;: &quot;Sarah Chen&quot;, &quot;email&quot;: &quot;sarah@acme.com&quot;}
+
+mcp_server.register_tool(
+    tool_id=&quot;customer.get_basic&quot;,
+    tool_name=&quot;获取客户基本信息&quot;,
+    parameters=[{&quot;name&quot;: &quot;customer_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;9182&quot;}],
+    execute_func=get_customer_basic
+)
+
+# 2. 注册&quot;获取客户交易&quot;工具
+def list_customer_trans(customer_id: str) -&gt; List[Dict]:
+    return [{&quot;order_id&quot;: &quot;ORD-202508&quot;, &quot;amount&quot;: 199.9, &quot;date&quot;: &quot;2025-08-25&quot;}]
+
+mcp_server.register_tool(
+    tool_id=&quot;customer.list_trans&quot;,
+    tool_name=&quot;获取客户交易记录&quot;,
+    parameters=[{&quot;name&quot;: &quot;customer_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;9182&quot;}],
+    execute_func=list_customer_trans
+)
+
+# 3. 注册&quot;获取服务记录&quot;工具
+def get_service_notes(customer_id: str) -&gt; List[str]:
+    return [&quot;2025-08-30：反馈物流延迟，已补偿优惠券&quot;]
+
+mcp_server.register_tool(
+    tool_id=&quot;customer.get_notes&quot;,
+    tool_name=&quot;获取客户服务记录&quot;,
+    parameters=[{&quot;name&quot;: &quot;customer_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;9182&quot;}],
+    execute_func=get_service_notes
+)
+
+# 智能体需3次调用（浪费token，且易遗漏某类信息）
+basic = mcp_server.call_tool(&quot;customer.get_basic&quot;, {&quot;customer_id&quot;: &quot;9182&quot;})
+trans = mcp_server.call_tool(&quot;customer.list_trans&quot;, {&quot;customer_id&quot;: &quot;9182&quot;})
+notes = mcp_server.call_tool(&quot;customer.get_notes&quot;, {&quot;customer_id&quot;: &quot;9182&quot;})
+</code></pre>
+<h2 id="3">共识 3：命名空间需 "清晰区分资源 / 服务"，消除工具歧义</h2>
+<h3 id="_7">核心逻辑</h3>
+<p>工具 ID 需按 "<strong>服务领域 + 资源类型 + 操作</strong>" 命名（如<code>asana.projects.search</code>），帮助智能体在数百个工具中快速定位。</p>
+<h3 id="_8">正例：规范命名空间的工具</h3>
+<pre><code class="language-python"># 1. Asana服务：项目相关工具
+def asana_search_projects(project_name: str, page: int = 1, page_size: int = 10) -&gt; List[Dict]:
+    return [{&quot;project_id&quot;: &quot;asana_prj_1&quot;, &quot;name&quot;: &quot;Acme产品开发&quot;, &quot;status&quot;: &quot;进行中&quot;}]
+
+mcp_server.register_tool(
+    tool_id=&quot;asana.projects.search&quot;,  # 命名空间：服务(asana)+资源(projects)+操作(search)
+    tool_name=&quot;搜索Asana项目&quot;,
+    tool_description=&quot;功能：按项目名称搜索Asana中的项目，支持分页；&quot;
+                    &quot;参数：project_name（必填，例：Acme产品开发）、page（可选，默认1）、page_size（可选，默认10）&quot;,
+    parameters=[
+        {&quot;name&quot;: &quot;project_name&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;Acme产品开发&quot;},
+        {&quot;name&quot;: &quot;page&quot;, &quot;type&quot;: &quot;int&quot;, &quot;required&quot;: False, &quot;default&quot;: 1},
+        {&quot;name&quot;: &quot;page_size&quot;, &quot;type&quot;: &quot;int&quot;, &quot;required&quot;: False, &quot;default&quot;: 10}
+    ],
+    execute_func=asana_search_projects
+)
+
+# 2. Asana服务：用户相关工具
+def asana_get_user_tasks(user_id: str) -&gt; List[Dict]:
+    return [{&quot;task_id&quot;: &quot;asana_task_1&quot;, &quot;title&quot;: &quot;完成需求文档&quot;, &quot;due_date&quot;: &quot;2025-09-15&quot;}]
+
+mcp_server.register_tool(
+    tool_id=&quot;asana.users.get_tasks&quot;,  # 命名空间：服务(asana)+资源(users)+操作(get_tasks)
+    tool_name=&quot;获取Asana用户任务&quot;,
+    parameters=[{&quot;name&quot;: &quot;user_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;asana_usr_123&quot;}],
+    execute_func=asana_get_user_tasks
+)
+
+# 智能体可通过工具ID快速识别用途（如&quot;asana.projects.search&quot;明确是Asana的项目搜索）
+prj_result = mcp_server.call_tool(&quot;asana.projects.search&quot;, {&quot;project_name&quot;: &quot;Acme产品开发&quot;})
+</code></pre>
+<h3 id="_9">反例：模糊命名的工具</h3>
+<pre><code class="language-python"># 1. 模糊工具ID：未区分资源类型
+def search_asana(keyword: str) -&gt; List[Dict]:
+    return [{&quot;id&quot;: &quot;asana_1&quot;, &quot;name&quot;: &quot;Acme产品开发&quot;, &quot;type&quot;: &quot;project&quot;}]  # 无法确定是项目/任务/用户
+
+mcp_server.register_tool(
+    tool_id=&quot;asana.search&quot;,  # 仅含服务(asana)，无资源类型
+    tool_name=&quot;搜索Asana内容&quot;,
+    tool_description=&quot;搜索Asana中的内容&quot;,  # 描述模糊
+    parameters=[{&quot;name&quot;: &quot;keyword&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;Acme&quot;}],
+    execute_func=search_asana
+)
+
+# 2. 混乱工具ID：无服务领域
+def get_tasks(user_id: str) -&gt; List[Dict]:
+    return [{&quot;task_id&quot;: &quot;task_1&quot;, &quot;title&quot;: &quot;完成需求文档&quot;}]  # 无法确定是Asana/Jira/其他工具的任务
+
+mcp_server.register_tool(
+    tool_id=&quot;get_tasks&quot;,  # 无服务领域，无资源类型
+    tool_name=&quot;获取任务&quot;,
+    parameters=[{&quot;name&quot;: &quot;user_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;123&quot;}],
+    execute_func=get_tasks
+)
+
+# 智能体调用时易混淆（如&quot;asana.search&quot;无法确定搜索项目还是任务，&quot;get_tasks&quot;无法确定是哪个平台的任务）
+confused_result = mcp_server.call_tool(&quot;asana.search&quot;, {&quot;keyword&quot;: &quot;Acme&quot;})
+</code></pre>
+<h2 id="4">共识 4：工具响应需 "高信号、低冗余"，减少智能体筛选成本</h2>
+<h3 id="_10">核心逻辑</h3>
+<p>响应仅返回智能体 "下游决策所需信息"（如<code>name</code>/<code>status</code>），剔除无意义的技术标识符（如<code>uuid</code>/<code>mime_type</code>）。</p>
+<h3 id="_11">正例：高信号响应工具</h3>
+<pre><code class="language-python">def get_file_info(file_id: str, response_format: ResponseFormat = ResponseFormat.CONCISE) -&gt; Dict:
+    # 底层数据（含技术字段，但仅返回关键信息）
+    raw_data = {
+        &quot;file_id&quot;: file_id,
+        &quot;uuid&quot;: &quot;f-uuid-123e4567-e89b-12d3-a456-426614174000&quot;,  # 冗余技术字段
+        &quot;name&quot;: &quot;Acme项目计划.pdf&quot;,
+        &quot;file_type&quot;: &quot;PDF&quot;,
+        &quot;size_mb&quot;: 2.5,
+        &quot;last_edited&quot;: &quot;2025-09-01&quot;,
+        &quot;server_path&quot;: &quot;/data/files/123&quot;,  # 冗余技术字段
+        &quot;thumbnail_url_256px&quot;: &quot;https://cdn/acme-256.jpg&quot;  # 冗余技术字段
+    }
+
+    if response_format == ResponseFormat.CONCISE:
+        # 仅返回智能体决策关键信息（如判断是否下载/分享）
+        return {
+            &quot;file_name&quot;: raw_data[&quot;name&quot;],
+            &quot;file_type&quot;: raw_data[&quot;file_type&quot;],
+            &quot;size_mb&quot;: raw_data[&quot;size_mb&quot;],
+            &quot;last_edited&quot;: raw_data[&quot;last_edited&quot;]
+        }
+    # 详细模式仅补充必要技术ID（如file_id用于后续下载工具调用）
+    return {
+        &quot;file_id&quot;: raw_data[&quot;file_id&quot;],
+        &quot;file_name&quot;: raw_data[&quot;name&quot;],
+        &quot;file_type&quot;: raw_data[&quot;file_type&quot;],
+        &quot;size_mb&quot;: raw_data[&quot;size_mb&quot;],
+        &quot;last_edited&quot;: raw_data[&quot;last_edited&quot;]
+    }
+
+mcp_server.register_tool(
+    tool_id=&quot;file.get_info&quot;,
+    tool_name=&quot;获取文件信息&quot;,
+    tool_description=&quot;功能：返回文件名称、类型、大小等关键信息，剔除冗余技术字段；&quot;
+                    &quot;参数：file_id（必填，例：file_456）、response_format（可选，默认concise）&quot;,
+    parameters=[
+        {&quot;name&quot;: &quot;file_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;file_456&quot;},
+        {&quot;name&quot;: &quot;response_format&quot;, &quot;type&quot;: &quot;enum&quot;, &quot;required&quot;: False, &quot;default&quot;: &quot;concise&quot;, &quot;enum_values&quot;: [e.value for e in ResponseFormat]}
+    ],
+    execute_func=get_file_info
+)
+
+# 响应示例（无冗余字段，智能体可直接用）
+file_info = mcp_server.call_tool(&quot;file.get_info&quot;, {&quot;file_id&quot;: &quot;file_456&quot;})
+print(file_info[&quot;data&quot;])
+# 输出：{&quot;file_name&quot;: &quot;Acme项目计划.pdf&quot;, &quot;file_type&quot;: &quot;PDF&quot;, &quot;size_mb&quot;: 2.5, &quot;last_edited&quot;: &quot;2025-09-01&quot;}
+</code></pre>
+<h3 id="_12">反例：冗余响应工具</h3>
+<pre><code class="language-python">def get_file_raw_data(file_id: str) -&gt; Dict:
+    # 返回所有底层数据，含大量智能体无用字段
+    return {
+        &quot;file_id&quot;: file_id,
+        &quot;uuid&quot;: &quot;f-uuid-123e4567-e89b-12d3-a456-426614174000&quot;,
+        &quot;name&quot;: &quot;Acme项目计划.pdf&quot;,
+        &quot;mime_type&quot;: &quot;application/pdf&quot;,  # 冗余（智能体只需&quot;PDF&quot;）
+        &quot;size_bytes&quot;: 2621440,  # 冗余（智能体需手动转MB）
+        &quot;server_path&quot;: &quot;/data/files/123&quot;,
+        &quot;thumbnail_url_256px&quot;: &quot;https://cdn/acme-256.jpg&quot;,
+        &quot;thumbnail_url_512px&quot;: &quot;https://cdn/acme-512.jpg&quot;,
+        &quot;upload_server_ip&quot;: &quot;10.0.0.1&quot;  # 完全无关
+    }
+
+mcp_server.register_tool(
+    tool_id=&quot;file.get_raw&quot;,
+    tool_name=&quot;获取文件原始数据&quot;,
+    parameters=[{&quot;name&quot;: &quot;file_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;file_456&quot;}],
+    execute_func=get_file_raw_data
+)
+
+# 响应示例（冗余字段占比超50%，智能体需手动筛选）
+raw_data = mcp_server.call_tool(&quot;file.get_raw&quot;, {&quot;file_id&quot;: &quot;file_456&quot;})
+print(raw_data[&quot;data&quot;][&quot;mime_type&quot;])  # 智能体需自行映射为&quot;PDF&quot;
+print(raw_data[&quot;data&quot;][&quot;size_bytes&quot;] / 1024 / 1024)  # 智能体需手动转MB
+</code></pre>
+<h2 id="5token">共识 5：token 效率需 "主动控制"，避免上下文溢出</h2>
+<h3 id="_13">核心逻辑</h3>
+<p>通过<strong>分页、过滤、截断</strong>控制响应规模，超过 token 限制时提示智能体 "缩小查询范围"，避免耗尽智能体上下文窗口。</p>
+<h3 id="token">正例：token 效率优化工具</h3>
+<pre><code class="language-python">def search_logs(
+    keyword: str,
+    time_range: str,  # 格式：&quot;YYYY-MM-DD to YYYY-MM-DD&quot;
+    page: int = 1,
+    page_size: int = 50,  # 默认分页：避免一次性返回过多数据
+    max_tokens: int = 2000  # 最大token限制（约500条日志）
+) -&gt; Dict:
+    # 模拟海量日志（1000条）
+    all_logs = [{&quot;log_id&quot;: f&quot;log_{i}&quot;, &quot;content&quot;: f&quot;[{time_range}] {keyword} 日志内容{i}&quot;} for i in range(1000)]
+
+    # 1. 分页计算
+    start_idx = (page - 1) * page_size
+    end_idx = start_idx + page_size
+    paginated_logs = all_logs[start_idx:end_idx]
+
+    # 2. Token估算（简化：每条日志约40 token）
+    total_tokens = len(paginated_logs) * 40
+    truncated = False
+    if total_tokens &gt; max_tokens:
+        # 截断并提示
+        max_logs = max_tokens // 40
+        paginated_logs = paginated_logs[:max_logs]
+        truncated = True
+
+    return {
+        &quot;logs&quot;: paginated_logs,
+        &quot;pagination&quot;: {
+            &quot;current_page&quot;: page,
+            &quot;page_size&quot;: page_size,
+            &quot;total_pages&quot;: (len(all_logs) + page_size - 1) // page_size
+        },
+        &quot;truncated&quot;: truncated,
+        &quot;suggestion&quot;: &quot;若日志不完整，可缩小time_range（例：2025-09-10 to 2025-09-10）或减小page_size&quot; if truncated else None
+    }
+
+mcp_server.register_tool(
+    tool_id=&quot;logs.search&quot;,
+    tool_name=&quot;搜索系统日志&quot;,
+    tool_description=&quot;功能：按关键词和时间范围搜索日志，支持分页和token截断，避免上下文溢出；&quot;
+                    &quot;参数：keyword（必填，例：支付失败）、time_range（必填，例：2025-09-01 to 2025-09-10）、&quot;
+                    &quot;page（可选，默认1）、page_size（可选，默认50）、max_tokens（可选，默认2000）&quot;,
+    parameters=[
+        {&quot;name&quot;: &quot;keyword&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;支付失败&quot;},
+        {&quot;name&quot;: &quot;time_range&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;2025-09-01 to 2025-09-10&quot;},
+        {&quot;name&quot;: &quot;page&quot;, &quot;type&quot;: &quot;int&quot;, &quot;required&quot;: False, &quot;default&quot;: 1},
+        {&quot;name&quot;: &quot;page_size&quot;, &quot;type&quot;: &quot;int&quot;, &quot;required&quot;: False, &quot;default&quot;: 50},
+        {&quot;name&quot;: &quot;max_tokens&quot;, &quot;type&quot;: &quot;int&quot;, &quot;required&quot;: False, &quot;default&quot;: 2000}
+    ],
+    execute_func=search_logs
+)
+
+# 调用示例：time_range过宽导致token超限制，工具主动截断并提示
+logs_result = mcp_server.call_tool(
+    &quot;logs.search&quot;,
+    {&quot;keyword&quot;: &quot;支付失败&quot;, &quot;time_range&quot;: &quot;2025-01-01 to 2025-09-10&quot;, &quot;page_size&quot;: 100}
+)
+print(logs_result[&quot;data&quot;][&quot;truncated&quot;])  # 输出：True
+print(logs_result[&quot;data&quot;][&quot;suggestion&quot;])  # 输出：若日志不完整，可缩小time_range...
+</code></pre>
+<h3 id="token_1">反例：无 token 控制工具</h3>
+<pre><code class="language-python">def get_all_logs(keyword: str) -&gt; Dict:
+    # 无分页/截断：返回所有匹配日志（可能1000+条，超智能体上下文）
+    all_logs = [{&quot;log_id&quot;: f&quot;log_{i}&quot;, &quot;content&quot;: f&quot;日志内容{i}：{keyword}&quot;} for i in range(1000)]
+    return {
+        &quot;logs&quot;: all_logs,
+        &quot;count&quot;: len(all_logs)
+    }
+
+mcp_server.register_tool(
+    tool_id=&quot;logs.get_all&quot;,
+    tool_name=&quot;获取所有匹配日志&quot;,
+    tool_description=&quot;获取所有含关键词的日志&quot;,  # 未提示规模风险
+    parameters=[{&quot;name&quot;: &quot;keyword&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;支付失败&quot;}],
+    execute_func=get_all_logs
+)
+
+# 调用示例：返回1000条日志（约40000 token），直接超出Claude Code默认25000 token限制
+all_logs_result = mcp_server.call_tool(&quot;logs.get_all&quot;, {&quot;keyword&quot;: &quot;支付失败&quot;})
+print(len(all_logs_result[&quot;data&quot;][&quot;logs&quot;]))  # 输出：1000（智能体上下文溢出，任务失败）
+</code></pre>
+<h2 id="6">共识 6：工具描述需 "清晰无歧义"，降低智能体误用率</h2>
+<h3 id="_14">核心逻辑</h3>
+<p>工具描述需明确 "<strong>功能 + 参数含义 + 示例 + 场景</strong>"，尤其参数需标注类型、必填性、示例，避免智能体传错值。</p>
+<h3 id="_15">正例：清晰描述的工具</h3>
+<pre><code class="language-python">def send_customer_email(
+    customer_id: str,
+    email_type: str,  # 枚举：refund_confirm/retention_offer
+    template_id: Optional[str] = None
+) -&gt; Dict:
+    &quot;&quot;&quot;发送客户邮件：根据类型自动匹配模板（无template_id时）&quot;&quot;&quot;
+    template_map = {
+        &quot;refund_confirm&quot;: &quot;tpl_refund_01&quot;,
+        &quot;retention_offer&quot;: &quot;tpl_retention_01&quot;
+    }
+    used_template = template_id or template_map[email_type]
+    return {
+        &quot;status&quot;: &quot;sent&quot;,
+        &quot;customer_id&quot;: customer_id,
+        &quot;email_type&quot;: email_type,
+        &quot;used_template&quot;: used_template
+    }
+
+mcp_server.register_tool(
+    tool_id=&quot;email.send_customer&quot;,
+    tool_name=&quot;发送客户邮件&quot;,
+    tool_description=&quot;功能：向指定客户发送邮件，支持退款确认、挽留方案两种类型，可自定义模板；&quot;
+                    &quot;参数说明：&quot;
+                    &quot;- customer_id（必填，客户唯一ID，例：9182）；&quot;
+                    &quot;- email_type（必填，邮件类型，仅支持：refund_confirm（退款确认）、retention_offer（挽留方案））；&quot;
+                    &quot;- template_id（可选，模板ID，例：tpl_custom_01，不填则用默认模板）；&quot;
+                    &quot;调用场景：客户退款后发送确认邮件、客户取消时发送挽留方案；&quot;
+                    &quot;错误提示：若email_type不在枚举内，需重新传入refund_confirm或retention_offer&quot;,
+    parameters=[
+        {&quot;name&quot;: &quot;customer_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;9182&quot;},
+        {&quot;name&quot;: &quot;email_type&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;retention_offer&quot;, &quot;enum_values&quot;: [&quot;refund_confirm&quot;, &quot;retention_offer&quot;]},
+        {&quot;name&quot;: &quot;template_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: False, &quot;example&quot;: &quot;tpl_custom_01&quot;}
+    ],
+    execute_func=send_customer_email,
+    error_suggestion=&quot;请检查email_type是否为'refund_confirm'或'retention_offer'，或补充template_id&quot;
+)
+
+# 智能体可按描述正确调用（无歧义）
+email_result = mcp_server.call_tool(
+    &quot;email.send_customer&quot;,
+    {&quot;customer_id&quot;: &quot;9182&quot;, &quot;email_type&quot;: &quot;retention_offer&quot;}
+)
+print(email_result[&quot;data&quot;][&quot;status&quot;])  # 输出：sent
+</code></pre>
+<h3 id="_16">反例：模糊描述的工具</h3>
+<pre><code class="language-python">def send_email(customer_id: str, type: str, template: Optional[str] = None) -&gt; Dict:
+    &quot;&quot;&quot;发送邮件&quot;&quot;&quot;  # 描述模糊
+    if type not in [&quot;refund&quot;, &quot;retention&quot;]:
+        raise ValueError(&quot;类型错误&quot;)
+    return {&quot;status&quot;: &quot;sent&quot;}
+
+mcp_server.register_tool(
+    tool_id=&quot;email.send&quot;,
+    tool_name=&quot;发送邮件&quot;,
+    tool_description=&quot;给客户发邮件，参数含类型和模板&quot;,  # 未说明参数含义/示例
+    parameters=[
+        {&quot;name&quot;: &quot;customer_id&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True},  # 无示例
+        {&quot;name&quot;: &quot;type&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True},  # 无枚举值说明
+        {&quot;name&quot;: &quot;template&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: False}  # 无示例
+    ],
+    execute_func=send_email
+)
+
+# 智能体易误用（参数模糊）
+# 错误1：type传&quot;挽留&quot;（实际需传&quot;retention&quot;）
+error1 = mcp_server.call_tool(&quot;email.send&quot;, {&quot;customer_id&quot;: &quot;9182&quot;, &quot;type&quot;: &quot;挽留&quot;})
+print(error1[&quot;error&quot;])  # 输出：类型错误（无修正建议）
+
+# 错误2：不知template参数格式（传&quot;挽留模板&quot;而非ID）
+error2 = mcp_server.call_tool(&quot;email.send&quot;, {&quot;customer_id&quot;: &quot;9182&quot;, &quot;type&quot;: &quot;retention&quot;, &quot;template&quot;: &quot;挽留模板&quot;})
+</code></pre>
+<h2 id="9">共识 9：错误处理需 "提供可行动建议"，引导智能体修正</h2>
+<h3 id="_17">核心逻辑</h3>
+<p>错误响应需明确 "<strong>错误原因 + 具体修正步骤</strong>"，而非仅返回错误码或模糊提示，帮助智能体快速调整调用参数。</p>
+<h3 id="_18">正例：可行动错误提示工具</h3>
+<pre><code class="language-python">def create_meeting(
+    attendee_emails: List[str],
+    start_time: str,  # 格式：&quot;YYYY-MM-DD HH:MM&quot;（24小时制）
+    duration_min: int  # 范围：15-180
+) -&gt; Dict:
+    # 参数校验：明确错误原因
+    if not all(&quot;@&quot; in email for email in attendee_emails):
+        raise ValueError(&quot;部分参会者邮箱格式无效&quot;)
+    if len(start_time.split(&quot; &quot;)) != 2 or len(start_time.split(&quot;:&quot;)[1]) != 2:
+        raise ValueError(&quot;开始时间格式错误&quot;)
+    if duration_min &lt; 15 or duration_min &gt; 180:
+        raise ValueError(&quot;会议时长需在15-180分钟之间&quot;)
+
+    return {&quot;meeting_id&quot;: &quot;meet_789&quot;, &quot;status&quot;: &quot;created&quot;, &quot;start_time&quot;: start_time}
+
+mcp_server.register_tool(
+    tool_id=&quot;calendar.create_meeting&quot;,
+    tool_name=&quot;创建会议&quot;,
+    tool_description=&quot;功能：创建日历会议，指定参会者、时间、时长；&quot;
+                    &quot;参数：attendee_emails（必填，邮箱列表，例：['jane@acme.com']）、&quot;
+                    &quot;start_time（必填，格式：YYYY-MM-DD HH:MM，例：2025-09-15 14:30）、&quot;
+                    &quot;duration_min（必填，15-180分钟，例：60）&quot;,
+    parameters=[
+        {&quot;name&quot;: &quot;attendee_emails&quot;, &quot;type&quot;: &quot;list&quot;, &quot;required&quot;: True, &quot;example&quot;: [&quot;jane@acme.com&quot;, &quot;john@acme.com&quot;]},
+        {&quot;name&quot;: &quot;start_time&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True, &quot;example&quot;: &quot;2025-09-15 14:30&quot;},
+        {&quot;name&quot;: &quot;duration_min&quot;, &quot;type&quot;: &quot;int&quot;, &quot;required&quot;: True, &quot;example&quot;: 60}
+    ],
+    execute_func=create_meeting,
+    error_suggestion=lambda e: {
+        &quot;邮箱错误&quot;: &quot;请检查参会者邮箱是否含'@'（例：['jane@acme.com']）&quot;,
+        &quot;时间格式错误&quot;: &quot;请按'YYYY-MM-DD HH:MM'格式传入（例：2025-09-15 14:30）&quot;,
+        &quot;时长错误&quot;: &quot;会议时长需设置为15-180分钟（例：30/60）&quot;
+    }.get(str(e).split(&quot;：&quot;)[0], &quot;请检查参数格式是否符合示例&quot;)
+)
+
+# 错误调用示例：时间格式错误，返回可行动建议
+error_result = mcp_server.call_tool(
+    &quot;calendar.create_meeting&quot;,
+    {&quot;attendee_emails&quot;: [&quot;jane@acme.com&quot;], &quot;start_time&quot;: &quot;2025-09-15 2点半&quot;, &quot;duration_min&quot;: 60}
+)
+print(error_result[&quot;error&quot;])  # 输出：开始时间格式错误
+print(error_result[&quot;suggestion&quot;])  # 输出：请按'YYYY-MM-DD HH:MM'格式传入（例：2025-09-15 14:30）
+</code></pre>
+<h3 id="_19">反例：模糊错误提示工具</h3>
+<pre><code class="language-python">def create_meeting_v2(attendees: List[str], time: str, duration: int) -&gt; Dict:
+    if not all(&quot;@&quot; in a for a in attendees):
+        raise ValueError(&quot;E001&quot;)  # 错误码无含义
+    if len(time.split(&quot; &quot;)) != 2:
+        raise ValueError(&quot;E002&quot;)
+    if duration &lt; 15 or duration &gt; 180:
+        raise ValueError(&quot;E003&quot;)
+    return {&quot;meeting_id&quot;: &quot;meet_789&quot;}
+
+mcp_server.register_tool(
+    tool_id=&quot;calendar.create_meeting_v2&quot;,
+    tool_name=&quot;创建会议V2&quot;,
+    parameters=[
+        {&quot;name&quot;: &quot;attendees&quot;, &quot;type&quot;: &quot;list&quot;, &quot;required&quot;: True},
+        {&quot;name&quot;: &quot;time&quot;, &quot;type&quot;: &quot;str&quot;, &quot;required&quot;: True},
+        {&quot;name&quot;: &quot;duration&quot;, &quot;type&quot;: &quot;int&quot;, &quot;required&quot;: True}
+    ],
+    execute_func=create_meeting_v2
+)
+
+# 错误调用示例：仅返回错误码，智能体无法修正
+error_result_v2 = mcp_server.call_tool(
+    &quot;calendar.create_meeting_v2&quot;,
+    {&quot;attendees&quot;: [&quot;jane.acme.com&quot;], &quot;time&quot;: &quot;2025-09-15&quot;, &quot;duration&quot;: 200}
+)
+print(error_result_v2[&quot;error&quot;])  # 输出：E001（智能体无法理解含义）
+print(error_result_v2.get(&quot;suggestion&quot;))  # 输出：None（无修正建议）
+</code></pre>
+<h2 id="mcp_2">总结：MCP 工具代码设计的核心准则</h2>
+<ol>
+<li>
+<p><strong>命名规范</strong>：工具 ID 按 "服务 + 资源 + 操作" 命名（如<code>payment.resolve_duplicate_charge</code>）；</p>
+</li>
+<li>
+<p><strong>描述清晰</strong>：明确 "功能 + 参数含义 + 示例 + 场景"，避免歧义；</p>
+</li>
+<li>
+<p><strong>响应精简</strong>：仅返回智能体决策关键信息，剔除冗余技术字段；</p>
+</li>
+<li>
+<p><strong>效率控制</strong>：通过分页、截断限制 token 消耗，超限时提示缩小查询范围；</p>
+</li>
+<li>
+<p><strong>错误友好</strong>：错误响应需含 "原因 + 可行动建议"，而非错误码；</p>
+</li>
+<li>
+<p><strong>高内聚</strong>：整合多步骤逻辑，避免智能体多次调用拼接数据。</p>
+</li>
+</ol>
+<p>以上代码示例均基于 Anthropic 的 MCP 实践逻辑，可直接适配 Claude 等 LLM 智能体，降低调用错误率并提升任务完成效率。</p>
+<h2 id="_20">参考文档</h2>
+<ul>
+<li>
+<p><a href="https://www.anthropic.com/engineering/writing-tools-for-agents">Writing effective tools for AI agents—using AI agents \ Anthropic</a></p>
+</li>
+<li>
+<p><a href="https://www.doubao.com/thread/w1590f5b1360ca747">豆包对话</a></p>
+</li>
+</ul>
+<blockquote>
+<p>（注：文档部分内容可能由 AI 生成）</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../expert-consensus-on-building-mcp/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Expert Consensus on Building MCP">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Expert Consensus on Building MCP
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../../essay/" class="md-footer__link md-footer__link--next" aria-label="Next: Essay">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Essay
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright&copy;2024-2025 Seey — <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">赣ICP备2024035936号-1</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Seey215" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://v.douyin.com/iyv4JuAx/" target="_blank" rel="noopener" title="v.douyin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M448.5 209.9c-44 .1-87-13.6-122.8-39.2v178.7c0 33.1-10.1 65.4-29 92.6s-45.6 48-76.6 59.6-64.8 13.5-96.9 5.3-60.9-25.9-82.7-50.8-35.3-56-39-88.9 2.9-66.1 18.6-95.2 40-52.7 69.6-67.7 62.9-20.5 95.7-16v89.9c-15-4.7-31.1-4.6-46 .4s-27.9 14.6-37 27.3-14 28.1-13.9 43.9 5.2 31 14.5 43.7 22.4 22.1 37.4 26.9 31.1 4.8 46-.1 28-14.4 37.2-27.1 14.2-28.1 14.2-43.8V0h88c-.1 7.4.6 14.9 1.9 22.2 3.1 16.3 9.4 31.9 18.7 45.7s21.3 25.6 35.2 34.6c19.9 13.1 43.2 20.1 67 20.1V210z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.path", "navigation.prune", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+  
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  <script src="../../../assets/javascripts/custom.058c863c.min.js"></script>
+
+  </body>
+</html>
