@@ -62,12 +62,12 @@ theme:
     logo: logo
 
 # Plugins
-plugins:
-  - blog
-  - search:
-      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - minify:
-      minify_html: true
+# plugins:
+#   - blog
+#   - search:
+#       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+#   - minify:
+#       minify_html: true
 
 # Additional configuration
 extra:
@@ -108,6 +108,9 @@ nav:
         - 5 业务: tech/database/service.md
     - Algorithm:
       - tech/algorithm/index.md
+    - MCP:
+      - Expert Consensus on Building MCP: tech/mcp/expert-consensus-on-building-mcp.md
+      - 构建MCP的专家共识: tech/mcp/expert-consensus-on-building-mcp.zh-CN.md
   - Essay:
     - essay/index.md
     - 聪明的关键: essay/neuron.md
