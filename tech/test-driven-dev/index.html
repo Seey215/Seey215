@@ -12,13 +12,13 @@
         <meta name="author" content="Seey">
       
       
-        <link rel="canonical" href="https://seey215.github.io/Seey215/tech/algorithm/">
+        <link rel="canonical" href="https://seey215.github.io/Seey215/tech/test-driven-dev/">
       
       
-        <link rel="prev" href="../database/service/">
+        <link rel="prev" href="../mcp/expert-consensus-on-building-mcp.zh-CN/">
       
       
-        <link rel="next" href="../mcp/expert-consensus-on-building-mcp/">
+        <link rel="next" href="../../essay/">
       
       
       <link rel="icon" href="../../assets/SeeyLogo.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>算法 - Seey</title>
+        <title>测试驱动开发 - Seey</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#tdd-" class="md-skip">
           Skip to content
         </a>
       
@@ -160,7 +160,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              算法
+              测试驱动开发
             
           </span>
         </div>
@@ -683,8 +683,6 @@
                 
   
   
-    
-  
   
   
     
@@ -702,17 +700,18 @@
     
     
       
+        
+        
+      
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
-              
+  
+  
+  
+    <a href="../algorithm/" class="md-nav__link">
+      
   
   
   <span class="md-ellipsis">
@@ -721,21 +720,12 @@
   </span>
   
 
-            </a>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_3">
-            <span class="md-nav__icon md-icon"></span>
-            Algorithm
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-          </ul>
-        </nav>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
       
     </li>
   
@@ -799,6 +789,8 @@
                 
   
   
+    
+  
   
   
     
@@ -816,18 +808,17 @@
     
     
       
-        
-        
-      
     
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
-  
-  
-  
-    <a href="../test-driven-dev/" class="md-nav__link">
-      
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
   
   
   <span class="md-ellipsis">
@@ -836,12 +827,21 @@
   </span>
   
 
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Test-Driven Dev
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -1152,18 +1152,369 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#tdd" class="md-nav__link">
     <span class="md-ellipsis">
-      数据结构
+      🎯 TDD 的核心思想
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      📝 实战案例：开发一个"任务标签"功能
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 实战案例：开发一个&#34;任务标签&#34;功能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      需求描述：
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tdd_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔄 TDD 完整流程演示
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔄 TDD 完整流程演示">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      常见算法
+      第一轮：创建标签功能
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第一轮：创建标签功能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      步骤 1：🔴 写第一个失败的测试
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      步骤 2：🟢 写最少的代码让测试通过
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      步骤 3：🔵 重构（如果需要）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      第二轮：验证标签名称
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第二轮：验证标签名称">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      步骤 1：🔴 添加验证测试
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      步骤 2：🟢 添加验证逻辑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      步骤 3：🔵 重构
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      第三轮：给任务添加标签
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第三轮：给任务添加标签">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      步骤 1：🔴 写测试
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      步骤 2：🟢 实现功能
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      步骤 3：🔵 重构
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      第四轮：通过标签筛选任务
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第四轮：通过标签筛选任务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      步骤 1：🔴 写测试
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      步骤 2：🟢 实现功能
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tdd_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 TDD 流程总结图
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tdd_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 TDD 的优势
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 TDD 的优势">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 1. 需求驱动
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 2. 快速反馈
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 3. 高测试覆盖率
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 4. 更好的设计
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 5. 重构信心
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ 6. 文档作用
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tdd_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 TDD 实践建议
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 TDD 实践建议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      对于初学者：
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      常见陷阱：
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 实战练习建议
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 实战练习建议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      练习 1：简单工具函数（入门）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      练习 2：数据验证（进阶）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      练习 3：业务逻辑（高级）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 推荐学习路径
     </span>
   </a>
   
@@ -1189,16 +1540,589 @@
     
       
     
-    <a href="https://github.com/Seey215/Seey215/raw/master/docs/tech/algorithm/index.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/Seey215/Seey215/raw/master/docs/tech/test-driven-dev/index.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
     </a>
   
 
 
-<h1 id="_1">算法</h1>
-<h2 id="_2">数据结构</h2>
-<h2 id="_3">常见算法</h2>
+<h1 id="tdd-">TDD - 测试驱动开发</h1>
+<h2 id="tdd">🎯 TDD 的核心思想</h2>
+<p><strong>先写测试，再写代码，最后重构</strong></p>
+<p>口诀：<strong>红 → 绿 → 重构</strong>
+- 🔴 <strong>红</strong>：写一个失败的测试
+- 🟢 <strong>绿</strong>：写最少的代码让测试通过
+- 🔵 <strong>重构</strong>：优化代码，保持测试通过</p>
+<hr />
+<h2 id="_1">📝 实战案例：开发一个"任务标签"功能</h2>
+<p>假设我们要开发一个新功能：<strong>给任务添加标签（Tags）</strong></p>
+<h3 id="_2">需求描述：</h3>
+<ul>
+<li>用户可以为任务创建标签</li>
+<li>标签有名称和颜色</li>
+<li>一个任务可以有多个标签</li>
+<li>标签可以被多个任务共享</li>
+<li>可以通过标签筛选任务</li>
+</ul>
+<hr />
+<h2 id="tdd_1">🔄 TDD 完整流程演示</h2>
+<h3 id="_3">第一轮：创建标签功能</h3>
+<h4 id="1"><strong>步骤 1：🔴 写第一个失败的测试</strong></h4>
+<p>创建测试文件 <code>domains/task-tag/tests/task-tag.test.ts</code>：</p>
+<pre><code class="language-typescript">import { describe, expect, test } from 'vitest';
+import { MockContext } from '@bika/domains/__tests__/mock';
+import { TaskTagSO } from '../server/task-tag-so';
+
+describe('任务标签功能 - 创建标签', async () =&gt; {
+  const { user, space } = await MockContext.initUserContext();
+
+  test('应该能创建一个标签', async () =&gt; {
+    // 准备
+    const tagData = {
+      name: '紧急',
+      color: '#FF0000',
+      spaceId: space.id,
+    };
+
+    // 执行
+    const tag = await TaskTagSO.create(user, tagData);
+
+    // 断言
+    expect(tag).toBeDefined();
+    expect(tag.name).toBe('紧急');
+    expect(tag.color).toBe('#FF0000');
+    expect(tag.spaceId).toBe(space.id);
+    expect(tag.createdBy).toBe(user.id);
+  });
+});
+</code></pre>
+<p><strong>运行测试：</strong></p>
+<pre><code class="language-bash">npx vitest task-tag.test.ts
+</code></pre>
+<p><strong>结果：</strong> ❌ 测试失败（因为 <code>TaskTagSO</code> 还不存在）</p>
+<pre><code>Error: Cannot find module '../server/task-tag-so'
+</code></pre>
+<hr />
+<h4 id="2"><strong>步骤 2：🟢 写最少的代码让测试通过</strong></h4>
+<p>创建 <code>domains/task-tag/server/task-tag-so.ts</code>：</p>
+<pre><code class="language-typescript">import { db } from '@bika/server-orm';
+import type { UserSO } from '@bika/domains/user/server/user-so';
+
+export class TaskTagSO {
+  id: string;
+  name: string;
+  color: string;
+  spaceId: string;
+  createdBy: string;
+
+  constructor(model: any) {
+    this.id = model.id;
+    this.name = model.name;
+    this.color = model.color;
+    this.spaceId = model.spaceId;
+    this.createdBy = model.createdBy;
+  }
+
+  static async create(
+    user: UserSO, 
+    data: { name: string; color: string; spaceId: string }
+  ): Promise&lt;TaskTagSO&gt; {
+    // 最简单的实现
+    const model = await db.prisma.taskTag.create({
+      data: {
+        name: data.name,
+        color: data.color,
+        spaceId: data.spaceId,
+        createdBy: user.id,
+      },
+    });
+
+    return new TaskTagSO(model);
+  }
+}
+</code></pre>
+<p>创建数据库模型（Prisma Schema）：</p>
+<pre><code class="language-prisma">// packages/bika-server-orm/prisma/schema.prisma
+
+model TaskTag {
+  id        String   @id @default(cuid())
+  name      String
+  color     String
+  spaceId   String
+  createdBy String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map(&quot;task_tags&quot;)
+}
+</code></pre>
+<p>运行数据库迁移：</p>
+<pre><code class="language-bash">pnpm prisma migrate dev --name add_task_tags
+</code></pre>
+<p><strong>再次运行测试：</strong></p>
+<pre><code class="language-bash">npx vitest task-tag.test.ts
+</code></pre>
+<p><strong>结果：</strong> ✅ 测试通过！</p>
+<hr />
+<h4 id="3"><strong>步骤 3：🔵 重构（如果需要）</strong></h4>
+<p>目前代码很简单，暂时不需要重构。继续下一个功能。</p>
+<hr />
+<h3 id="_4">第二轮：验证标签名称</h3>
+<h4 id="1_1"><strong>步骤 1：🔴 添加验证测试</strong></h4>
+<p>在同一个测试文件中添加：</p>
+<pre><code class="language-typescript">test('创建标签时名称不能为空', async () =&gt; {
+  await expect(
+    TaskTagSO.create(user, {
+      name: '',  // 空名称
+      color: '#FF0000',
+      spaceId: space.id,
+    })
+  ).rejects.toThrow('标签名称不能为空');
+});
+
+test('创建标签时颜色必须是有效的十六进制', async () =&gt; {
+  await expect(
+    TaskTagSO.create(user, {
+      name: '紧急',
+      color: 'invalid-color',  // 无效颜色
+      spaceId: space.id,
+    })
+  ).rejects.toThrow('颜色格式无效');
+});
+</code></pre>
+<p><strong>运行测试：</strong> ❌ 失败（没有验证逻辑）</p>
+<hr />
+<h4 id="2_1"><strong>步骤 2：🟢 添加验证逻辑</strong></h4>
+<pre><code class="language-typescript">import { ServerError, errors } from '@bika/contents/config/server/error';
+
+export class TaskTagSO {
+  // ... 之前的代码 ...
+
+  static async create(
+    user: UserSO, 
+    data: { name: string; color: string; spaceId: string }
+  ): Promise&lt;TaskTagSO&gt; {
+    // 验证名称
+    if (!data.name || data.name.trim() === '') {
+      throw new ServerError({
+        code: 'INVALID_TAG_NAME',
+        message: '标签名称不能为空',
+      });
+    }
+
+    // 验证颜色格式
+    const colorRegex = /^#[0-9A-F]{6}$/i;
+    if (!colorRegex.test(data.color)) {
+      throw new ServerError({
+        code: 'INVALID_TAG_COLOR',
+        message: '颜色格式无效',
+      });
+    }
+
+    const model = await db.prisma.taskTag.create({
+      data: {
+        name: data.name.trim(),
+        color: data.color.toUpperCase(),
+        spaceId: data.spaceId,
+        createdBy: user.id,
+      },
+    });
+
+    return new TaskTagSO(model);
+  }
+}
+</code></pre>
+<p><strong>运行测试：</strong> ✅ 通过！</p>
+<hr />
+<h4 id="3_1"><strong>步骤 3：🔵 重构</strong></h4>
+<p>提取验证逻辑到单独的方法：</p>
+<pre><code class="language-typescript">export class TaskTagSO {
+  // ... 之前的代码 ...
+
+  private static validateName(name: string): void {
+    if (!name || name.trim() === '') {
+      throw new ServerError({
+        code: 'INVALID_TAG_NAME',
+        message: '标签名称不能为空',
+      });
+    }
+  }
+
+  private static validateColor(color: string): void {
+    const colorRegex = /^#[0-9A-F]{6}$/i;
+    if (!colorRegex.test(color)) {
+      throw new ServerError({
+        code: 'INVALID_TAG_COLOR',
+        message: '颜色格式无效',
+      });
+    }
+  }
+
+  static async create(
+    user: UserSO, 
+    data: { name: string; color: string; spaceId: string }
+  ): Promise&lt;TaskTagSO&gt; {
+    // 使用提取的验证方法
+    this.validateName(data.name);
+    this.validateColor(data.color);
+
+    const model = await db.prisma.taskTag.create({
+      data: {
+        name: data.name.trim(),
+        color: data.color.toUpperCase(),
+        spaceId: data.spaceId,
+        createdBy: user.id,
+      },
+    });
+
+    return new TaskTagSO(model);
+  }
+}
+</code></pre>
+<p><strong>运行测试：</strong> ✅ 仍然通过！重构成功。</p>
+<hr />
+<h3 id="_5">第三轮：给任务添加标签</h3>
+<h4 id="1_2"><strong>步骤 1：🔴 写测试</strong></h4>
+<pre><code class="language-typescript">describe('任务标签功能 - 关联任务', async () =&gt; {
+  const { user, space, member, rootFolder } = await MockContext.initUserContext();
+
+  test('应该能给任务添加标签', async () =&gt; {
+    // 创建一个任务（假设使用 Database）
+    const taskDB = await rootFolder.createChildSimple(user, {
+      name: '任务列表',
+      resourceType: 'DATABASE',
+    });
+    const database = await taskDB.toResourceSO&lt;DatabaseSO&gt;();
+    const record = await database.createRecord(user, member, {
+      name: '完成项目文档',
+    });
+
+    // 创建标签
+    const tag = await TaskTagSO.create(user, {
+      name: '紧急',
+      color: '#FF0000',
+      spaceId: space.id,
+    });
+
+    // 给任务添加标签
+    await record.addTag(tag.id);
+
+    // 验证
+    const tags = await record.getTags();
+    expect(tags.length).toBe(1);
+    expect(tags[0].id).toBe(tag.id);
+    expect(tags[0].name).toBe('紧急');
+  });
+
+  test('一个任务可以有多个标签', async () =&gt; {
+    const taskDB = await rootFolder.createChildSimple(user, {
+      name: '任务列表',
+      resourceType: 'DATABASE',
+    });
+    const database = await taskDB.toResourceSO&lt;DatabaseSO&gt;();
+    const record = await database.createRecord(user, member, {
+      name: '完成项目文档',
+    });
+
+    // 创建多个标签
+    const urgentTag = await TaskTagSO.create(user, {
+      name: '紧急',
+      color: '#FF0000',
+      spaceId: space.id,
+    });
+
+    const importantTag = await TaskTagSO.create(user, {
+      name: '重要',
+      color: '#FFA500',
+      spaceId: space.id,
+    });
+
+    // 添加多个标签
+    await record.addTag(urgentTag.id);
+    await record.addTag(importantTag.id);
+
+    // 验证
+    const tags = await record.getTags();
+    expect(tags.length).toBe(2);
+    expect(tags.map(t =&gt; t.name)).toContain('紧急');
+    expect(tags.map(t =&gt; t.name)).toContain('重要');
+  });
+});
+</code></pre>
+<p><strong>运行测试：</strong> ❌ 失败（<code>record.addTag</code> 方法不存在）</p>
+<hr />
+<h4 id="2_2"><strong>步骤 2：🟢 实现功能</strong></h4>
+<p>首先更新数据库模型：</p>
+<pre><code class="language-prisma">model TaskTag {
+  id        String   @id @default(cuid())
+  name      String
+  color     String
+  spaceId   String
+  createdBy String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // 关联关系
+  records   RecordTag[]
+
+  @@map(&quot;task_tags&quot;)
+}
+
+model RecordTag {
+  id        String   @id @default(cuid())
+  recordId  String
+  tagId     String
+  createdAt DateTime @default(now())
+
+  tag       TaskTag  @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@unique([recordId, tagId])
+  @@map(&quot;record_tags&quot;)
+}
+</code></pre>
+<p>扩展 RecordSO 类（假设在 <code>domains/database/server/record-so.ts</code>）：</p>
+<pre><code class="language-typescript">export class RecordSO {
+  // ... 现有代码 ...
+
+  async addTag(tagId: string): Promise&lt;void&gt; {
+    await db.prisma.recordTag.create({
+      data: {
+        recordId: this.id,
+        tagId: tagId,
+      },
+    });
+  }
+
+  async getTags(): Promise&lt;TaskTagSO[]&gt; {
+    const recordTags = await db.prisma.recordTag.findMany({
+      where: { recordId: this.id },
+      include: { tag: true },
+    });
+
+    return recordTags.map(rt =&gt; new TaskTagSO(rt.tag));
+  }
+
+  async removeTag(tagId: string): Promise&lt;void&gt; {
+    await db.prisma.recordTag.deleteMany({
+      where: {
+        recordId: this.id,
+        tagId: tagId,
+      },
+    });
+  }
+}
+</code></pre>
+<p><strong>运行测试：</strong> ✅ 通过！</p>
+<hr />
+<h4 id="3_2"><strong>步骤 3：🔵 重构</strong></h4>
+<p>可以考虑：
+- 添加批量操作方法
+- 缓存标签数据
+- 添加索引优化查询</p>
+<p>暂时不需要大的重构。</p>
+<hr />
+<h3 id="_6">第四轮：通过标签筛选任务</h3>
+<h4 id="1_3"><strong>步骤 1：🔴 写测试</strong></h4>
+<pre><code class="language-typescript">describe('任务标签功能 - 筛选任务', async () =&gt; {
+  const { user, space, member, rootFolder } = await MockContext.initUserContext();
+
+  test('应该能通过标签筛选任务', async () =&gt; {
+    // 创建任务列表
+    const taskDB = await rootFolder.createChildSimple(user, {
+      name: '任务列表',
+      resourceType: 'DATABASE',
+    });
+    const database = await taskDB.toResourceSO&lt;DatabaseSO&gt;();
+
+    // 创建标签
+    const urgentTag = await TaskTagSO.create(user, {
+      name: '紧急',
+      color: '#FF0000',
+      spaceId: space.id,
+    });
+
+    // 创建多个任务
+    const task1 = await database.createRecord(user, member, { name: '任务1' });
+    const task2 = await database.createRecord(user, member, { name: '任务2' });
+    const task3 = await database.createRecord(user, member, { name: '任务3' });
+
+    // 只给任务1和任务2添加&quot;紧急&quot;标签
+    await task1.addTag(urgentTag.id);
+    await task2.addTag(urgentTag.id);
+
+    // 通过标签筛选
+    const urgentTasks = await database.getRecordsByTag(urgentTag.id);
+
+    // 验证
+    expect(urgentTasks.length).toBe(2);
+    expect(urgentTasks.map(t =&gt; t.id)).toContain(task1.id);
+    expect(urgentTasks.map(t =&gt; t.id)).toContain(task2.id);
+    expect(urgentTasks.map(t =&gt; t.id)).not.toContain(task3.id);
+  });
+});
+</code></pre>
+<p><strong>运行测试：</strong> ❌ 失败</p>
+<hr />
+<h4 id="2_3"><strong>步骤 2：🟢 实现功能</strong></h4>
+<p>在 DatabaseSO 中添加方法：</p>
+<pre><code class="language-typescript">export class DatabaseSO {
+  // ... 现有代码 ...
+
+  async getRecordsByTag(tagId: string): Promise&lt;RecordSO[]&gt; {
+    const recordTags = await db.prisma.recordTag.findMany({
+      where: { 
+        tagId: tagId,
+      },
+      include: {
+        // 假设有关联到 record 表
+      },
+    });
+
+    const recordIds = recordTags.map(rt =&gt; rt.recordId);
+
+    // 获取完整的 record 数据
+    const records = await this.getRecordsByIds(recordIds);
+
+    return records;
+  }
+}
+</code></pre>
+<p><strong>运行测试：</strong> ✅ 通过！</p>
+<hr />
+<h2 id="tdd_2">📊 TDD 流程总结图</h2>
+<pre><code>┌─────────────────────────────────────────┐
+│  1. 🔴 写一个失败的测试                    │
+│     - 明确需求                           │
+│     - 定义接口                           │
+│     - 写测试用例                         │
+└──────────────┬──────────────────────────┘
+               ↓
+┌─────────────────────────────────────────┐
+│  2. 🟢 写最少的代码让测试通过               │
+│     - 不考虑优化                         │
+│     - 只求测试通过                       │
+│     - 快速实现                           │
+└──────────────┬──────────────────────────┘
+               ↓
+┌─────────────────────────────────────────┐
+│  3. 🔵 重构代码                           │
+│     - 优化结构                           │
+│     - 提取重复代码                       │
+│     - 保持测试通过                       │
+└──────────────┬──────────────────────────┘
+               ↓
+┌─────────────────────────────────────────┐
+│  4. 🔁 重复以上步骤                       │
+│     - 添加新功能                         │
+│     - 逐步完善                           │
+└─────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2 id="tdd_3">🎯 TDD 的优势</h2>
+<h3 id="1_4">✅ <strong>1. 需求驱动</strong></h3>
+<p>先写测试，强迫你思考清楚需求和接口设计</p>
+<h3 id="2_4">✅ <strong>2. 快速反馈</strong></h3>
+<p>每次改动都能立即知道是否破坏了现有功能</p>
+<h3 id="3_3">✅ <strong>3. 高测试覆盖率</strong></h3>
+<p>自然而然达到高覆盖率，因为代码都是为了通过测试而写的</p>
+<h3 id="4">✅ <strong>4. 更好的设计</strong></h3>
+<p>为了让代码可测试，会写出更解耦、更模块化的代码</p>
+<h3 id="5">✅ <strong>5. 重构信心</strong></h3>
+<p>有完整的测试保护，重构时不怕破坏功能</p>
+<h3 id="6">✅ <strong>6. 文档作用</strong></h3>
+<p>测试本身就是最好的使用文档</p>
+<hr />
+<h2 id="tdd_4">💡 TDD 实践建议</h2>
+<h3 id="_7"><strong>对于初学者：</strong></h3>
+<ol>
+<li><strong>从小功能开始</strong></li>
+<li>不要一开始就做复杂功能</li>
+<li>
+<p>选择独立的工具函数练习</p>
+</li>
+<li>
+<p><strong>严格遵循红-绿-重构循环</strong></p>
+</li>
+<li>不要跳过任何步骤</li>
+<li>
+<p>养成习惯很重要</p>
+</li>
+<li>
+<p><strong>小步前进</strong></p>
+</li>
+<li>每次只添加一个小测试</li>
+<li>
+<p>不要一次写太多测试</p>
+</li>
+<li>
+<p><strong>及时重构</strong></p>
+</li>
+<li>看到重复代码就重构</li>
+<li>不要等到代码很乱才重构</li>
+</ol>
+<h3 id="_8"><strong>常见陷阱：</strong></h3>
+<p>❌ <strong>陷阱 1：写太多测试再写代码</strong></p>
+<pre><code class="language-typescript">// ❌ 错误：一次写10个测试
+test('test1', ...)
+test('test2', ...)
+test('test3', ...)
+// ... 然后才开始写代码
+
+// ✅ 正确：一次一个
+test('test1', ...)  // 写这个测试
+// 写代码让它通过
+// 然后才写下一个测试
+</code></pre>
+<p>❌ <strong>陷阱 2：为了通过测试写假实现</strong></p>
+<pre><code class="language-typescript">// ❌ 错误：硬编码返回值
+static async create(user, data) {
+  return { id: '123', name: '紧急' };  // 假数据
+}
+
+// ✅ 正确：真实实现
+static async create(user, data) {
+  return await db.prisma.taskTag.create({ data });
+}
+</code></pre>
+<p>❌ <strong>陷阱 3：跳过重构步骤</strong></p>
+<pre><code class="language-typescript">// ❌ 测试通过了就不管代码质量
+// 结果代码越来越乱
+
+// ✅ 测试通过后立即重构
+// 保持代码整洁
+</code></pre>
+<hr />
+<h2 id="_9">🚀 实战练习建议</h2>
+<h3 id="1_5"><strong>练习 1：简单工具函数（入门）</strong></h3>
+<p>开发一个字符串处理函数，使用 TDD：</p>
+<pre><code class="language-typescript">// 功能：将字符串转换为 slug 格式
+// &quot;Hello World!&quot; → &quot;hello-world&quot;
+</code></pre>
+<h3 id="2_5"><strong>练习 2：数据验证（进阶）</strong></h3>
+<p>开发一个邮箱验证器：</p>
+<pre><code class="language-typescript">// 功能：验证邮箱格式
+// 支持多种规则
+// 返回详细的错误信息
+</code></pre>
+<h3 id="3_4"><strong>练习 3：业务逻辑（高级）</strong></h3>
+<p>开发一个简单的购物车功能：</p>
+<pre><code class="language-typescript">// 功能：
+// - 添加商品
+// - 删除商品
+// - 计算总价
+// - 应用折扣
+</code></pre>
+<hr />
+<h2 id="_10">📚 推荐学习路径</h2>
+<ol>
+<li><strong>第1周</strong>：练习简单的纯函数（工具函数）</li>
+<li><strong>第2周</strong>：练习带数据库的 CRUD 操作</li>
+<li><strong>第3周</strong>：练习复杂的业务逻辑</li>
+<li><strong>第4周</strong>：在实际项目中应用 TDD</li>
+</ol>
+<hr />
+<p>希望这个详细的 TDD 流程演示对你有帮助！关键是要<strong>多练习</strong>，一开始可能会觉得慢，但熟练后会发现 TDD 能大大提高开发质量和效率。</p>
 
 
 
@@ -1236,7 +2160,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../database/service/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 5 业务">
+          <a href="../mcp/expert-consensus-on-building-mcp.zh-CN/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 构建MCP的专家共识">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1246,20 +2170,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                5 业务
+                构建MCP的专家共识
               </div>
             </div>
           </a>
         
         
           
-          <a href="../mcp/expert-consensus-on-building-mcp/" class="md-footer__link md-footer__link--next" aria-label="Next: Expert Consensus on Building MCP">
+          <a href="../../essay/" class="md-footer__link md-footer__link--next" aria-label="Next: Essay">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Expert Consensus on Building MCP
+                Essay
               </div>
             </div>
             <div class="md-footer__button md-icon">
