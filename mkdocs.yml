@@ -111,6 +111,8 @@ nav:
     - MCP:
       - Expert Consensus on Building MCP: tech/mcp/expert-consensus-on-building-mcp.md
       - 构建MCP的专家共识: tech/mcp/expert-consensus-on-building-mcp.zh-CN.md
+    - Test-Driven Dev:
+      - 测试驱动开发: tech/test-driven-dev/index.md
   - Essay:
     - essay/index.md
     - 聪明的关键: essay/neuron.md
