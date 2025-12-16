@@ -108,6 +108,8 @@ nav:
         - 5 业务: tech/database/service.md
     - Algorithm:
       - tech/algorithm/index.md
+    - Agent:
+      - tech/agent/cached-tokens.md
     - MCP:
       - Expert Consensus on Building MCP: tech/mcp/expert-consensus-on-building-mcp.md
       - 构建MCP的专家共识: tech/mcp/expert-consensus-on-building-mcp.zh-CN.md
