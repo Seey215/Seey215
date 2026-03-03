@@ -3,11 +3,6 @@
 A Developmental Engineer exploring the boundaries of AI Agents, protocols, and modern web infrastructure.  
 *"This is where a profound motto usually goes, but I figured this is better."*
 
-<br>
-
-### 🛠️ Tech Stack & Tooling
-
-**Core**
 <p>
   <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square" alt="TypeScript" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square" alt="JavaScript" />
@@ -16,7 +11,6 @@ A Developmental Engineer exploring the boundaries of AI Agents, protocols, and m
   <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=flat-square" alt="React" />
 </p>
 
-**AI Native Workflow**
 <p>
   <img src="https://img.shields.io/badge/Claude_Code-D97757?logo=anthropic&logoColor=white&style=flat-square" alt="Claude Code" />
   <img src="https://img.shields.io/badge/Cursor-000000?logo=cursor&logoColor=white&style=flat-square" alt="Cursor" />
