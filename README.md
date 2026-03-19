@@ -16,7 +16,7 @@
 
 ### 🔭 Current Focus
 
-- Building and maintaining the **[ToolSDK MCP Registry](https://github.com/toolsdk-ai/toolsdk-mcp-registry)** (The largest open-source directory for Model Context Protocol servers).
+- Building and maintaining the **[ToolSDK MCP Registry](https://github.com/toolsdk-ai/toolsdk-mcp-registry)** (The open-source directory/gateway for Model Context Protocol servers).
 - Engineering autonomous agent workflows and browser automation layers.
 - Continuously exploring, recording, and acting.
 
