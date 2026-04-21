@@ -16,7 +16,7 @@
 
 ### 🔭 Current Focus
 
-- Software Engineer at [https://buda.im](https://buda.im), working on AI Agent systems and infrastructure.
+- Software Engineer at **[Buda.im](https://buda.im)**, working on AI Agent systems and infrastructure.
 - Building and maintaining the **[ToolSDK MCP Registry](https://github.com/toolsdk-ai/toolsdk-mcp-registry)** (The open-source directory/gateway for Model Context Protocol servers).
 - Engineering autonomous agents for social media automation — including browsing, liking, commenting, and replying — to support growth, engagement, and lead generation.
 
